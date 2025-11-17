@@ -1,4 +1,5 @@
 <script lang="ts">
+  import SocialIcons from './SocialIcons.svelte';
 </script>
 
 <header
@@ -85,28 +86,7 @@
 
     <!-- Bottom Content with Social Links -->
     <div class="flex items-center justify-between mt-auto pt-spacing-xl">
-      <div class="flex items-center gap-4">
-        <!-- LinkedIn Icon Placeholder -->
-        <div
-          class="w-10 h-10 flex items-center justify-center transition-colors cursor-pointer"
-        >
-          <img
-            src="/images/linkedin_logo.svg"
-            alt="LinkedIn Logo"
-            class="w-24 h-[16px] hover:text-text-on-green"
-          />
-        </div>
-        <!-- YouTube Icon Placeholder -->
-        <div
-          class="w-10 h-10 flex items-center justify-center transition-colors cursor-pointer"
-        >
-          <img
-            src="/images/youtube_logo.svg"
-            alt="YouTube Logo"
-            class="w-24 h-[16px] hover:text-text-on-green"
-          />
-        </div>
-      </div>
+      <SocialIcons />
       <div>
         <a
           href="https://openapis.org"

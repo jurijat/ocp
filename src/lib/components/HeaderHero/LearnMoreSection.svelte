@@ -1,9 +1,9 @@
 <script lang="ts">
 </script>
 
-<section class="p-10 flex flex-row flex-nowrap h-[210px] items-center bg-white">
+<section class="p-16 flex flex-row flex-nowrap h-[210px] items-center bg-white">
   <!-- Left Content Container (2/3) -->
-  <div class="flex w-2/3 flex-col gap-x-10 border-amber-200 border">
+  <div class="flex w-2/3 flex-col gap-x-10">
     <!-- Learn More Title -->
     <div class="flex flex-col">
       <h2 class="text-4xl uppercase font-bold text-text-on-green tracking-wide">
@@ -16,10 +16,8 @@
       </span>
     </div>
   </div>
-  <div class="flex w-1/3 items-center justify-center border-amber-200 border">
+  <div class="flex w-1/3 items-center justify-end">
     <!-- Logo Section -->
-    <div class="h-20">
-      <img src="/images/api_masters.svg" alt="API Master Logo" class="h-20" />
-    </div>
+    <img src="/images/api_masters.svg" alt="API Master Logo" class="h-20" />
   </div>
 </section>
