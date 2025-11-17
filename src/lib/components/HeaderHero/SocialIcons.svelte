@@ -1,4 +1,4 @@
-<div class="flex items-center gap-4">
+<div class="flex items-center gap-10">
   <!-- LinkedIn Icon -->
   <a
     href="https://linkedin.com"
@@ -23,7 +23,12 @@
       </g>
       <defs>
         <clipPath id="clip0_693_1541">
-          <rect width="32" height="32" fill="white" transform="translate(6 6)" />
+          <rect
+            width="32"
+            height="32"
+            fill="white"
+            transform="translate(6 6)"
+          />
         </clipPath>
       </defs>
     </svg>
