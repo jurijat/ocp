@@ -2,11 +2,11 @@
 </script>
 
 <header
-  class="flex flex-row flex-nowrap gap-spacing-lg gap-y-14 h-[1117px] bg-bg-dark text-text-primary"
+  class="flex flex-row flex-nowrap gap-spacing-lg gap-y-14 h-[1117px] overflow-hidden bg-bg-dark text-text-primary"
 >
   <!-- Left Content Container (2/3) -->
   <div
-    class="flex w-2/3 flex-col gap-y-10 gap-x-10 p-10 px-14 border-r-border-primary"
+    class="flex w-2/3 flex-col gap-y-10 gap-x-16 p-16 px-16 border-r-border-primary"
   >
     <!-- Logos Section -->
     <div
@@ -35,7 +35,7 @@
     <!-- Title Section -->
     <div class="flex flex-col pt-12">
       <h1
-        class="text-9xl leading-[114px] font-bold tracking-tighter wrap-break-word"
+        class="text-9xl font-bold tracking-tighter wrap-break-word leading-[0.92]"
       >
         <span class="text-primary block">OPENAPI</span>
         <span class="text-text-primary block">CONFERENCE</span>
@@ -88,19 +88,23 @@
       <div class="flex items-center gap-4">
         <!-- LinkedIn Icon Placeholder -->
         <div
-          class="w-10 h-10 bg-bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer"
+          class="w-10 h-10 flex items-center justify-center transition-colors cursor-pointer"
         >
-          <span class="text-text-secondary hover:text-text-on-green text-xs"
-            >LI</span
-          >
+          <img
+            src="/images/linkedin_logo.svg"
+            alt="LinkedIn Logo"
+            class="w-24 h-[16px] hover:text-text-on-green"
+          />
         </div>
         <!-- YouTube Icon Placeholder -->
         <div
-          class="w-10 h-10 bg-bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer"
+          class="w-10 h-10 flex items-center justify-center transition-colors cursor-pointer"
         >
-          <span class="text-text-secondary hover:text-text-on-green text-xs"
-            >YT</span
-          >
+          <img
+            src="/images/youtube_logo.svg"
+            alt="YouTube Logo"
+            class="w-24 h-[16px] hover:text-text-on-green"
+          />
         </div>
       </div>
       <div>
@@ -126,9 +130,7 @@
       <div class="absolute inset-0 bg-[#00000052]"></div>
 
       <!-- Location Content Overlay -->
-      <div
-        class="absolute px-[64px] py-[72px] inset-0 p-spacing-xl flex flex-col justify-between"
-      >
+      <div class="absolute px-16 py-16 inset-0 flex flex-col justify-between">
         <!-- Location Pin Icon -->
         <div
           class="shrink-0 bg-black rounded-[100px] flex items-center w-24 h-24 justify-center"
@@ -151,9 +153,9 @@
           >
             CNIT FOREST, <br />PARIS
           </h2>
-          <p class="text-sm text-text-muted leading-tight tracking-widest">
+          <div class="text-sm text-text-muted leading-tight tracking-widest">
             2 PL. DE LA DEFENSE,<br />92092 PUTEAUX,<br />FRANCE
-          </p>
+          </div>
         </div>
       </div>
     </div>
