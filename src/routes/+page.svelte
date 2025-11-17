@@ -1,5 +1,6 @@
 <script lang="ts">
   import HeaderHero from "$lib/components/HeaderHero/HeaderHero.svelte";
+  import LearnMoreSection from "$lib/components/HeaderHero/LearnMoreSection.svelte";
 </script>
 
 <svelte:head>
@@ -11,7 +12,8 @@
 </svelte:head>
 
 <div class="flex items-center justify-center min-h-screen w-full mx-auto">
-  <div class="max-w-screen-xl container">
+  <div class="max-w-[1728px] container">
     <HeaderHero />
+    <LearnMoreSection />
   </div>
 </div>
