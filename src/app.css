@@ -1,0 +1,10 @@
+/* Global Styles - Conference Landing Page */
+
+/* Import Tailwind CSS */
+@import 'tailwindcss';
+
+/* Import custom theme configuration */
+@import './styles/theme.css';
+
+/* Import global reset styles */
+@import './styles/reset.css';
