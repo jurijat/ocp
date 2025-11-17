@@ -1,5 +1,6 @@
 <script lang="ts">
   import HeaderHero from "$lib/components/HeaderHero/HeaderHero.svelte";
+  import HeaderSection from "$lib/components/HeaderHero/HeaderSection.svelte";
   import LearnMoreSection from "$lib/components/HeaderHero/LearnMoreSection.svelte";
 </script>
 
@@ -15,5 +16,6 @@
   <div class="max-w-[1728px] container">
     <HeaderHero />
     <LearnMoreSection />
+    <HeaderSection title="AGENDA" />
   </div>
 </div>
