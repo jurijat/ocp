@@ -7,24 +7,24 @@
   }>();
 </script>
 
-<section class="p-16 flex flex-row flex-nowrap h-64 items-center bg-black">
-  <!-- Left Content Container (2/3) -->
-  <div class="flex w-9/10 flex-col gap-x-10">
+<section class="p-4 tablet:p-8 desktop:p-16 flex flex-row flex-nowrap py-8 tablet:py-12 desktop:h-64 items-center bg-black">
+  <!-- Left Content Container -->
+  <div class="flex w-full tablet:w-9/10 flex-col gap-x-10">
     <!-- Section Title -->
     <div class="flex flex-col gap-y-4">
-      <h1 class="text-9xl uppercase font-bold text-white tracking-wide">
+      <h1 class="text-4xl tablet:text-7xl desktop:text-9xl uppercase font-bold text-white tracking-wide">
         {title}
       </h1>
     </div>
   </div>
   <div class="flex w-1/10 items-center justify-end">
     <div
-      class="w-24 h-24 bg-black rounded-full flex items-center justify-center border border-primary-green-muted cursor-pointer hover:border-primary-dark transition-colors duration-200"
+      class="w-10 h-10 tablet:w-16 tablet:h-16 desktop:w-24 desktop:h-24 bg-black rounded-full flex items-center justify-center border border-primary-green-muted cursor-pointer hover:border-primary-dark transition-colors duration-200"
     >
       {#if iconType === "arrow-down"}
         <!-- Arrow Down Icon -->
         <svg
-          class="w-7 h-7 text-primary-green-muted"
+          class="w-5 h-5 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7 text-primary-green-muted"
           viewBox="0 0 24 24"
           fill="currentColor"
         >
@@ -33,7 +33,7 @@
       {:else if iconType === "plus"}
         <!-- Plus Icon -->
         <svg
-          class="w-7 h-7 text-primary-green-muted"
+          class="w-5 h-5 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7 text-primary-green-muted"
           viewBox="0 0 24 24"
           fill="currentColor"
         >

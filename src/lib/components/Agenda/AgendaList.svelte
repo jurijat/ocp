@@ -117,7 +117,7 @@
             section.items[2].title
           )}
           <div
-            class="flex flex-col md:flex-row gap-spacing-lg w-full h-[490px]"
+            class="flex flex-col md:flex-row gap-spacing-lg w-full h-auto tablet:h-[490px]"
           >
             <div class="three-item-1" style="--width-desktop: {widths.width1};">
               <AgendaItemCard item={section.items[0]} />
@@ -140,7 +140,7 @@
                 )}
                 <!-- Pair of items with calculated widths -->
                 <div
-                  class="flex flex-col md:flex-row gap-spacing-lg w-full h-[490px] pair-container"
+                  class="flex flex-col md:flex-row gap-spacing-lg w-full h-auto tablet:h-[490px] pair-container"
                 >
                   <div
                     class="pair-item-1"

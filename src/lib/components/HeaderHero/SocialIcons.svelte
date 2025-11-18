@@ -1,4 +1,4 @@
-<div class="flex items-center gap-10">
+<div class="flex items-center mobile:gap-4 gap-10">
   <!-- LinkedIn Icon -->
   <a
     href="https://linkedin.com"

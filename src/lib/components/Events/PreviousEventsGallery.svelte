@@ -1,49 +1,120 @@
 <script lang="ts">
-  import { asset } from '$app/paths';
+  import { asset } from "$app/paths";
 
-  // Previous events images
-  const images = [
-    {
-      id: 1,
-      url: asset('/images/hug-1.png'),
-      alt: "Previous OpenAPI Conference Event 1",
-      height: "h-[310px]",
-    },
-    {
-      id: 2,
-      url: asset('/images/hug-2.png'),
-      alt: "Previous OpenAPI Conference Event 2",
-      height: "h-[420px]",
-    },
-    {
-      id: 3,
-      url: asset('/images/hug-3.png'),
-      alt: "Previous OpenAPI Conference Event 3",
-      height: "h-[320px]",
-    },
+  const rows = [
+    [
+      { url: asset("/images/hugs/hug_row_1_1.jpg"), alt: "Event 1" },
+      { url: asset("/images/hugs/hug_row_1_2.jpg"), alt: "Event 2" },
+      { url: asset("/images/hugs/hug_row_1_3.jpg"), alt: "Event 3" },
+      { url: asset("/images/hugs/hug_row_1_4.jpg"), alt: "Event 4" },
+    ],
+    [
+      { url: asset("/images/hugs/hug_row_2_1.jpg"), alt: "Event 5" },
+      { url: asset("/images/hugs/hug_row_2_2.jpg"), alt: "Event 6" },
+      { url: asset("/images/hugs/hug_row_2_3.jpg"), alt: "Event 7" },
+      { url: asset("/images/hugs/hug_row_2_4.jpg"), alt: "Event 8" },
+    ],
+    [
+      { url: asset("/images/hugs/hug_row_3_1.jpg"), alt: "Event 9" },
+      { url: asset("/images/hugs/hug_row_3_2.jpg"), alt: "Event 10" },
+      { url: asset("/images/hugs/hug_row_3_3.jpg"), alt: "Event 11" },
+      { url: asset("/images/hugs/hug_row_3_4.jpg"), alt: "Event 12" },
+    ],
   ];
+
+  // Flat array for mobile slider
+  const allImages = rows.flat();
+
+  // Current slide index for mobile
+  let currentSlide = $state(0);
+  let sliderRef: HTMLDivElement;
+
+  function handleScroll() {
+    if (sliderRef) {
+      const scrollLeft = sliderRef.scrollLeft;
+      const slideWidth = sliderRef.clientWidth;
+      currentSlide = Math.round(scrollLeft / slideWidth);
+    }
+  }
+
+  function goToSlide(index: number) {
+    if (sliderRef) {
+      const slideWidth = sliderRef.clientWidth;
+      sliderRef.scrollTo({ left: index * slideWidth, behavior: "smooth" });
+    }
+  }
 </script>
 
-<section class="w-full bg-bg-dark">
-  <!-- Image Gallery -->
-  <div class="flex flex-col">
-    {#each images as image (image.id)}
-      <div class="w-full {image.height} overflow-hidden cursor-pointer group">
-        <img
-          src={image.url}
-          alt={image.alt}
-          class="w-full h-full object-cover"
-        />
+<section class="w-full bg-bg-dark px-4 tablet:px-0">
+  <!-- Gallery Container with border -->
+  <div class="border border-primary-green-muted rounded-lg overflow-hidden">
+    <!-- Mobile Slider -->
+    <div class="tablet:hidden flex flex-col h-[400px] bg-black">
+      <!-- Slider Container - centered vertically -->
+      <div class="flex-1 flex items-center justify-center overflow-hidden">
+        <div
+          bind:this={sliderRef}
+          onscroll={handleScroll}
+          class="flex items-center h-[280px] w-full"
+          style="overflow-x: scroll; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none;"
+        >
+          {#each allImages as image}
+            <div
+              class="flex-none h-full"
+              style="min-width: 100%; scroll-snap-align: start;"
+            >
+              <img
+                src={image.url}
+                alt={image.alt}
+                class="w-full h-full object-cover"
+              />
+            </div>
+          {/each}
+        </div>
       </div>
-    {/each}
-  </div>
 
-  <!-- Show More Footer -->
-  <div
-    class="w-full h-[116px] bg-black flex items-center justify-start px-16 cursor-pointer"
-  >
-    <span class="text-text-muted text-sm uppercase font-bold tracking-widest">
-      + Show more
-    </span>
+      <!-- Navigation Dots - at bottom -->
+      <div class="flex justify-center items-center gap-3 py-4">
+        {#each [0, 1, 2, 3, 4] as dotIndex}
+          <button
+            type="button"
+            onclick={() => goToSlide(dotIndex * 2)}
+            class="w-3 h-3 rounded-full transition-colors duration-200"
+            class:bg-primary={Math.floor(currentSlide / 2) === dotIndex}
+            class:bg-primary-green-muted={Math.floor(currentSlide / 2) !== dotIndex}
+            aria-label="Go to slide {dotIndex + 1}"
+          ></button>
+        {/each}
+      </div>
+    </div>
+
+    <!-- Tablet/Desktop Grid -->
+    <div class="hidden tablet:block">
+      {#each rows as row, rowIndex}
+        <div class="flex flex-row">
+          {#each row as image, colIndex}
+            <div
+              class="w-1/4 aspect-[4/3] overflow-hidden cursor-pointer group"
+            >
+              <img
+                src={image.url}
+                alt={image.alt}
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+          {/each}
+        </div>
+      {/each}
+    </div>
   </div>
 </section>
+
+<style>
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+</style>

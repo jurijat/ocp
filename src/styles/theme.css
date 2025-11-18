@@ -124,35 +124,15 @@
   /* Breakpoints          */
   /* ==================== */
 
+  /* Custom breakpoints (mobile-first) */
+  --breakpoint-mobile: 24.375rem;   /* 390px */
+  --breakpoint-tablet: 60rem;       /* 960px */
+  --breakpoint-desktop: 108rem;     /* 1728px */
+
+  /* Tailwind defaults */
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1536px;
 }
-
-/**
- * Usage Examples:
- *
- * Colors:
- *   - bg-primary, bg-primary-dark
- *   - bg-bg-dark, bg-bg-dark-elevated
- *   - text-text-primary, text-text-secondary
- *
- * Spacing:
- *   - p-spacing-xl, m-spacing-lg, gap-spacing-md
- *
- * Typography:
- *   - text-xs, text-5xl
- *   - font-medium, font-bold
- *   - leading-tight, leading-relaxed
- *
- * Border Radius:
- *   - rounded-sm, rounded-lg, rounded-full
- *
- * Shadows:
- *   - shadow-sm, shadow-lg
- *
- * Z-index:
- *   - z-dropdown, z-modal
- */
