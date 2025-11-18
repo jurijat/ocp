@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { asset } from '$app/paths';
   import AgendaList from "$lib/components/Agenda/AgendaList.svelte";
   import DualHeaderSection from "$lib/components/HeaderHero/DualHeaderSection.svelte";
   import Footer from "$lib/components/Footer/Footer.svelte";
@@ -19,7 +20,7 @@
           title: "EXECUTIVE BREAKFAST",
           badge: "INVITE ONLY",
           speakers: [],
-          icon: "/images/break-fest.svg",
+          icon: asset('/images/break-fest.svg'),
         },
         {
           id: "1",
@@ -238,7 +239,7 @@
     <DualHeaderSection
       title="Want to learn more?"
       subtitle="Checkout Masterclasses by API Master on December 10th"
-      imageUrl="/images/api_masters.svg"
+      imageUrl={asset('/images/api_masters.svg')}
       imageAlt="API Master Logo"
     />
     <HeaderSection title="AGENDA" />

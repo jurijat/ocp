@@ -1,21 +1,23 @@
 <script lang="ts">
+  import { asset } from '$app/paths';
+
   // Previous events images
   const images = [
     {
       id: 1,
-      url: "/images/hug-1.png",
+      url: asset('/images/hug-1.png'),
       alt: "Previous OpenAPI Conference Event 1",
       height: "h-[310px]",
     },
     {
       id: 2,
-      url: "/images/hug-2.png",
+      url: asset('/images/hug-2.png'),
       alt: "Previous OpenAPI Conference Event 2",
       height: "h-[420px]",
     },
     {
       id: 3,
-      url: "/images/hug-3.png",
+      url: asset('/images/hug-3.png'),
       alt: "Previous OpenAPI Conference Event 3",
       height: "h-[320px]",
     },

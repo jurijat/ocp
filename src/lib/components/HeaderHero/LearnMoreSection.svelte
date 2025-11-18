@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { asset } from '$app/paths';
 </script>
 
 <section class="p-16 flex flex-row flex-nowrap h-[210px] items-center bg-white">
@@ -16,6 +17,6 @@
   </div>
   <div class="flex w-1/3 items-center justify-end">
     <!-- Logo Section -->
-    <img src="/images/api_masters.svg" alt="API Master Logo" class="h-20" />
+    <img src={asset('/images/api_masters.svg')} alt="API Master Logo" class="h-20" />
   </div>
 </section>

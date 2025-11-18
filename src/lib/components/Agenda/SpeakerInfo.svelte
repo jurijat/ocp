@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { asset } from '$app/paths';
+
   interface Speaker {
     name: string;
     company: string;
@@ -22,7 +24,7 @@
         class="w-full h-full flex items-center justify-center bg-text-muted/20 text-text-muted text-sm font-bold"
       >
         <img
-          src="/images/face_{Math.random() < 0.5 ? 1 : 2}.png"
+          src={asset(`/images/face_${Math.random() < 0.5 ? 1 : 2}.png`)}
           alt={speaker.name}
           class="w-full h-full object-cover"
         />

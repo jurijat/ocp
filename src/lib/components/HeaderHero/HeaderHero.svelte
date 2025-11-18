@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { asset } from '$app/paths';
   import SocialIcons from './SocialIcons.svelte';
 </script>
 
@@ -17,7 +18,7 @@
         class="w-[243px] h-[64px] flex items-center justify-center text-text-muted text-sm"
       >
         <img
-          src="/images/openapi_con_logo.svg"
+          src={asset('/images/openapi_con_logo.svg')}
           alt="OpenAPI Conference Logo"
           class="w-[243px] h-[64px]"
         />
@@ -26,7 +27,7 @@
         class="w-24 h-[64px] flex items-center justify-center text-text-muted text-sm"
       >
         <img
-          src="/images/img_hosted_by_fost.png"
+          src={asset('/images/img_hosted_by_fost.png')}
           alt="Hosted by Fost Logo"
           class="w-24 h-[16px]"
         />
@@ -104,7 +105,8 @@
   >
     <!-- Background Image -->
     <div
-      class="w-full h-full relative bg-[url(/images/background/background_top_right.jpg)] bg-cover bg-center"
+      class="w-full h-full relative bg-cover bg-center"
+      style="background-image: url({asset('/images/background/background_top_right.jpg')})"
     >
       <!-- Dark Overlay -->
       <div class="absolute inset-0 bg-[#00000052]"></div>
