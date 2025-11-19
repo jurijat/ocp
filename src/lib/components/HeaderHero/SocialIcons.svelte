@@ -1,7 +1,7 @@
 <div class="flex items-center mobile:gap-4 gap-10">
   <!-- LinkedIn Icon -->
   <a
-    href="https://linkedin.com"
+    href="https://www.linkedin.com/company/open-api-initiative/"
     class="w-10 h-10 flex items-center justify-center cursor-pointer group"
     aria-label="LinkedIn"
   >

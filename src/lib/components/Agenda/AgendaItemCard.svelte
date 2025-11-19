@@ -24,7 +24,7 @@
 </script>
 
 <div
-  class="bg-black border tablet:border-0 tablet:border-b p-4 tablet:p-16 flex flex-col justify-between h-full hover:bg-primary transition-colors duration-transition-base cursor-pointer group {isLastInRow
+  class="bg-black border tablet:border-0 tablet:border-b p-4 tablet:p-4 desktop:p-16 flex flex-col justify-between h-full hover:bg-primary transition-colors duration-transition-base cursor-pointer group {isLastInRow
     ? ''
     : 'tablet:border-r'} border-border-primary"
 >
@@ -50,7 +50,7 @@
 
   <!-- Title -->
   <div
-    class="text-2xl tablet:text-3xl font-bold text-primary uppercase tracking-tight leading-tight mb-4 tablet:mb-8 grow group-hover:text-text-on-green transition-colors duration-transition-base"
+    class="text-2xl tablet:text-2xl desktop:text-5xl font-bold text-primary uppercase tracking-tight leading-tight mb-4 tablet:mb-8 grow group-hover:text-text-on-green transition-colors duration-transition-base"
   >
     {item.title}
   </div>
@@ -63,7 +63,7 @@
         <div class="flex items-center">
           <div class="flex items-center -space-x-6">
             <div
-              class="w-12 h-12 tablet:w-20 tablet:h-20 rounded-full overflow-hidden shrink-0 z-10 border-2 border-black"
+              class="w-12 h-12 tablet:w-12 tablet:h-12 desktop:w-12 desktop:h-12 rounded-full overflow-hidden shrink-0 z-10 border-2 border-black"
             >
               {#if item.speakers[0].avatar}
                 <img
@@ -76,7 +76,7 @@
               {/if}
             </div>
             <div
-              class="w-12 h-12 tablet:w-20 tablet:h-20 rounded-full overflow-hidden shrink-0 border-2 border-black transition-all duration-300 group-hover:opacity-0 group-hover:-translate-x-full"
+              class="w-12 h-12 tablet:w-12 tablet:h-12 desktop:w-12 desktop:h-12 rounded-full overflow-hidden shrink-0 border-2 border-black transition-all duration-300 group-hover:opacity-0 group-hover:-translate-x-full"
             >
               {#if item.speakers[1].avatar}
                 <img

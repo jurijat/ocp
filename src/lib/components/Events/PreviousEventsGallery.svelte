@@ -84,16 +84,14 @@
 
     <!-- Tablet/Desktop Grid -->
     <div class="hidden tablet:block">
-      {#each rows as row, rowIndex}
+      {#each rows as row}
         <div class="flex flex-row">
-          {#each row as image, colIndex}
-            <div
-              class="w-1/4 aspect-[4/3] overflow-hidden cursor-pointer group"
-            >
+          {#each row as image}
+            <div class="w-1/4 aspect-[4/3] overflow-hidden">
               <img
                 src={image.url}
                 alt={image.alt}
-                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                class="w-full h-full object-cover"
               />
             </div>
           {/each}

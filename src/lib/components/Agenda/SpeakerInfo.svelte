@@ -13,7 +13,7 @@
 <div class="flex items-center gap-3">
   <!-- Avatar -->
   <div
-    class="w-13 tablet:w-20 h-13 tablet:h-20 rounded-full overflow-hidden shrink-0"
+    class="w-13 tablet:w-10 h-13 tablet:h-10 desktop:h-20 desktop:w-20 rounded-full overflow-hidden shrink-0"
   >
     {#if speaker.avatar}
       <img

@@ -2,6 +2,7 @@
   import { asset } from "$app/paths";
   import { onMount } from "svelte";
   import SocialIcons from "./SocialIcons.svelte";
+  import AddToCalendarPopup from "../AddToCalendarPopup.svelte";
 
   // Countdown to December 11, 2025
   const targetDate = new Date("2025-12-11T00:00:00");
@@ -10,6 +11,9 @@
   let hours = $state(0);
   let minutes = $state(0);
   let seconds = $state(0);
+
+  // Calendar popup state
+  let showCalendarPopup = $state(false);
 
   function updateCountdown() {
     const now = new Date();
@@ -91,11 +95,12 @@
       >
         11 December, 2025
       </div>
-      <div
-        class="text-xs tablet:text-sm transition-colors duration-transition-fast uppercase text-text-muted hover:cursor-pointer tracking-widest leading-tightest"
+      <a
+        onclick={() => (showCalendarPopup = true)}
+        class="text-xs tablet:text-xs transition-colors duration-transition-fast uppercase text-text-muted hover:text-primary hover:cursor-pointer tracking-widest leading-tightest"
       >
         + Add to calendar
-      </div>
+      </a>
     </div>
 
     <!-- Mobile-only Location Card (beneath date section) -->
@@ -136,7 +141,10 @@
 
     <!-- Register Button -->
     <div class="px-4 tablet:px-0">
-      <div
+      <a
+        href="https://www.openapis.org/"
+        target="_blank"
+        rel="noopener noreferrer"
         class="group/btn bg-primary mt-4 tablet:mt-4 desktop:mt-12 rounded-full flex font-bold tracking-wide px-4 tablet:px-spacing-2xl items-center justify-between h-16 tablet:h-20 desktop:h-30 w-full hover:bg-primary-dark text-text-on-green text-xl tablet:text-3xl desktop:text-[42px] uppercase py-spacing-md transition-colors duration-transition-base pl-4 tablet:pl-10 shadow-md hover:shadow-lg cursor-pointer relative overflow-hidden"
       >
         <!-- Shimmer effect -->
@@ -155,12 +163,12 @@
             <path d="M8 5v14l11-7z" />
           </svg>
         </div>
-      </div>
+      </a>
     </div>
 
     <!-- Countdown Timer -->
     <div
-      class="text-xs text-text-muted font-medium tracking-widest uppercase px-4 tablet:px-0 items-center w-full text-center tablet:text-left tablet:text-lg"
+      class="text-xs text-text-muted font-medium tracking-widest uppercase px-4 tablet:px-0 items-center w-full text-center tablet:text-left tablet:text-md desktop:text-lg"
     >
       {days} Days ~ {String(hours).padStart(2, "0")}:{String(minutes).padStart(
         2,
@@ -236,3 +244,9 @@
     </div>
   </div>
 </header>
+
+<!-- Calendar Popup -->
+<AddToCalendarPopup
+  isOpen={showCalendarPopup}
+  onClose={() => (showCalendarPopup = false)}
+/>

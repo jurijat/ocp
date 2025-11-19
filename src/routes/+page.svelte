@@ -204,14 +204,19 @@
       imageAlt="API Master Logo"
     />
     <HeaderSection title="AGENDA" href="#agenda" />
-    <AgendaList sections={sections2} />
+    <div id="agenda">
+      <AgendaList sections={sections2} />
+    </div>
     <HeaderSection title="PREVIOUS EVENTS" href="#previous-events" />
-    <PreviousEventsGallery />
+    <div id="previous-events">
+      <PreviousEventsGallery />
+    </div>
 
     <DualHeaderSection
       title="Subscribe"
       subtitle="for OPENAPI Conf updates"
       iconType="plus"
+      href="https://www.openapis.org/"
     />
     <Footer />
   </div>

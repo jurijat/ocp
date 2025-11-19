@@ -1,7 +1,11 @@
 <script lang="ts">
   type IconType = "arrow-down" | "plus";
 
-  const { title, iconType = "arrow-down", href = "#" } = $props<{
+  const {
+    title,
+    iconType = "arrow-down",
+    href = "#",
+  } = $props<{
     title: string;
     iconType?: IconType;
     href?: string;
@@ -9,14 +13,14 @@
 </script>
 
 <section
-  class="p-4 tablet:p-8 desktop:p-16 flex flex-row flex-nowrap py-8 tablet:py-12 desktop:h-64 items-center bg-black"
+  class="p-4 desktop:p-16 flex flex-row flex-nowrap py-8 tablet:py-12 tablet:h-32 desktop:h-64 items-center bg-black"
 >
   <!-- Left Content Container -->
   <div class="flex w-full tablet:w-9/10 flex-col gap-x-10">
     <!-- Section Title -->
     <div class="flex flex-col gap-y-4">
       <h1
-        class="text-4xl tablet:text-7xl desktop:text-9xl uppercase font-bold text-white tracking-tighter"
+        class="text-4xl tablet:text-5xl tablet:pt-4 desktop:text-9xl uppercase font-bold text-white tracking-tighter"
       >
         {title}
       </h1>

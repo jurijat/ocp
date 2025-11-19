@@ -68,7 +68,9 @@
       </p>
 
       <!-- Links Section -->
-      <div class="flex flex-wrap justify-start items-center gap-10 font-extralight">
+      <div
+        class="flex flex-wrap justify-start items-center gap-10 font-extralight"
+      >
         <!-- OPENAPIS.ORG Link -->
         <a
           href="https://openapis.org"
@@ -81,7 +83,7 @@
 
         <!-- Code of Conduct Link with Copy Icon -->
         <a
-          href="https://github.com/OAI/OpenAPI-Specification/blob/main/CODE_OF_CONDUCT.md"
+          href="https://github.com/OAI/.github/blob/main/.github/CODE_OF_CONDUCT.md"
           target="_blank"
           rel="noopener noreferrer"
           class="text-text-secondary hover:text-primary text-sm font-medium transition-colors tracking-widest uppercase flex items-center gap-2"
