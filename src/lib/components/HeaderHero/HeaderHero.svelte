@@ -179,9 +179,15 @@
 
     <!-- Countdown Timer -->
     <div
-      class="text-xs text-text-muted font-medium tracking-widest uppercase px-4 tablet:px-0 items-center w-full text-center tablet:text-left tablet:text-md desktop:text-lg"
+      class="flex text-xs text-text-muted font-medium tracking-widest uppercase px-4 tablet:px-0 items-center justify-center tablet:justify-start w-full tablet:text-md desktop:text-lg"
     >
-      {days} Days ~ {String(hours).padStart(2, "0")}:{String(minutes).padStart(
+      {days} Days
+      <img
+        src={asset("/images/big_tilde.svg")}
+        alt=""
+        class="inline h-2 mx-3"
+      />
+      {String(hours).padStart(2, "0")}:{String(minutes).padStart(
         2,
         "0"
       )}:{String(seconds).padStart(2, "0")}
