@@ -49,7 +49,7 @@
   <!-- Gallery Container with border -->
   <div class="border border-primary-green-muted rounded-4xl overflow-hidden">
     <!-- Mobile Slider -->
-    <div class="tablet:hidden bg-black pt-30">
+    <div class="tablet:hidden bg-black pt-12">
       <!-- Slider Container -->
       <div
         bind:this={sliderRef}
@@ -59,17 +59,13 @@
       >
         {#each allImages as image}
           <div class="w-full h-full shrink-0 snap-start flex items-center">
-            <img
-              src={image.url}
-              alt={image.alt}
-              class="w-full object-cover"
-            />
+            <img src={image.url} alt={image.alt} class="w-full object-cover" />
           </div>
         {/each}
       </div>
 
       <!-- Navigation Dots -->
-      <div class="flex justify-center items-center gap-3 pt-30">
+      <div class="flex justify-center items-center gap-3 pt-12">
         {#each [0, 1, 2, 3, 4] as dotIndex}
           <button
             type="button"
