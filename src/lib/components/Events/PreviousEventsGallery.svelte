@@ -54,7 +54,7 @@
       <div
         bind:this={sliderRef}
         onscroll={handleScroll}
-        class="flex h-[600px] overflow-x-scroll"
+        class="flex h-[420px] overflow-x-scroll"
         style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none;"
       >
         {#each allImages as image}
@@ -65,7 +65,7 @@
       </div>
 
       <!-- Navigation Dots -->
-      <div class="flex justify-center items-center gap-3 pt-12">
+      <div class="flex justify-center items-center gap-3 pt-12 pb-2">
         {#each [0, 1, 2, 3, 4] as dotIndex}
           <button
             type="button"
