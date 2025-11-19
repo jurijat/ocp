@@ -96,7 +96,18 @@
         11 December, 2025
       </div>
       <a
-        onclick={() => (showCalendarPopup = true)}
+        href="#"
+        role="button"
+        onclick={(e) => {
+          e.preventDefault();
+          showCalendarPopup = true;
+        }}
+        onkeydown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            showCalendarPopup = true;
+          }
+        }}
         class="text-xs tablet:text-xs transition-colors duration-transition-fast uppercase text-text-muted hover:text-primary hover:cursor-pointer tracking-widest leading-tightest"
       >
         + Add to calendar
@@ -194,7 +205,7 @@
 
   <!-- Right Content Container (1/3) - Hidden on mobile -->
   <div
-    class="group/loc hidden tablet:flex flex-col w-full tablet:w-1/3 min-h-[300px] tablet:min-h-0 border-0 tablet:border-l tablet:border-l-border-primary bg-bg-dark-elevated overflow-hidden relative cursor-pointer"
+    class="group/loc hidden tablet:flex flex-col w-full tablet:w-1/3 min-h-[300px] tablet:min-h-0 border-0 tablet:border-l tablet:border-l-border-primary bg-bg-dark-elevated overflow-hidden relative"
   >
     <!-- Background Image -->
     <div

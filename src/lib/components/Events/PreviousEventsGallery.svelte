@@ -45,37 +45,39 @@
   }
 </script>
 
-<section class="w-full bg-bg-dark px-4 tablet:px-0">
+<section class="w-full bg-bg-dark px-2 tablet:px-0">
   <!-- Gallery Container with border -->
-  <div class="border border-primary-green-muted rounded-lg overflow-hidden">
+  <div class="border border-primary-green-muted rounded-4xl overflow-hidden">
     <!-- Mobile Slider -->
-    <div class="tablet:hidden bg-black py-12">
+    <div class="tablet:hidden bg-black pt-30">
       <!-- Slider Container -->
       <div
         bind:this={sliderRef}
         onscroll={handleScroll}
-        class="flex h-[280px] overflow-x-scroll"
+        class="flex h-[600px] overflow-x-scroll"
         style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none;"
       >
         {#each allImages as image}
-          <div class="w-full h-full shrink-0 snap-start">
+          <div class="w-full h-full shrink-0 snap-start flex items-center">
             <img
               src={image.url}
               alt={image.alt}
-              class="w-full h-full object-cover"
+              class="w-full object-cover"
             />
           </div>
         {/each}
       </div>
 
       <!-- Navigation Dots -->
-      <div class="flex justify-center items-center gap-3 pt-12">
+      <div class="flex justify-center items-center gap-3 pt-30">
         {#each [0, 1, 2, 3, 4] as dotIndex}
           <button
             type="button"
             onclick={() => goToSlide(dotIndex * 2)}
             class="w-3 h-3 rounded-full transition-colors duration-200"
-            style="background-color: {Math.floor(currentSlide / 2) === dotIndex ? '#47c552' : '#4d7051'};"
+            style="background-color: {Math.floor(currentSlide / 2) === dotIndex
+              ? '#47c552'
+              : '#4d7051'};"
             aria-label="Go to slide {dotIndex + 1}"
           ></button>
         {/each}
