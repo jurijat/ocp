@@ -1,24 +1,30 @@
 <script lang="ts">
   type IconType = "arrow-down" | "plus";
 
-  const { title, iconType = "arrow-down" } = $props<{
+  const { title, iconType = "arrow-down", href = "#" } = $props<{
     title: string;
     iconType?: IconType;
+    href?: string;
   }>();
 </script>
 
-<section class="p-4 tablet:p-8 desktop:p-16 flex flex-row flex-nowrap py-8 tablet:py-12 desktop:h-64 items-center bg-black">
+<section
+  class="p-4 tablet:p-8 desktop:p-16 flex flex-row flex-nowrap py-8 tablet:py-12 desktop:h-64 items-center bg-black"
+>
   <!-- Left Content Container -->
   <div class="flex w-full tablet:w-9/10 flex-col gap-x-10">
     <!-- Section Title -->
     <div class="flex flex-col gap-y-4">
-      <h1 class="text-4xl tablet:text-7xl desktop:text-9xl uppercase font-bold text-white tracking-wide">
+      <h1
+        class="text-4xl tablet:text-7xl desktop:text-9xl uppercase font-bold text-white tracking-tighter"
+      >
         {title}
       </h1>
     </div>
   </div>
   <div class="flex w-1/10 items-center justify-end">
-    <div
+    <a
+      {href}
       class="w-10 h-10 tablet:w-16 tablet:h-16 desktop:w-24 desktop:h-24 bg-black rounded-full flex items-center justify-center border border-primary-green-muted cursor-pointer hover:border-primary-dark transition-colors duration-200"
     >
       {#if iconType === "arrow-down"}
@@ -40,6 +46,6 @@
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
         </svg>
       {/if}
-    </div>
+    </a>
   </div>
 </section>

@@ -49,39 +49,33 @@
   <!-- Gallery Container with border -->
   <div class="border border-primary-green-muted rounded-lg overflow-hidden">
     <!-- Mobile Slider -->
-    <div class="tablet:hidden flex flex-col h-[400px] bg-black">
-      <!-- Slider Container - centered vertically -->
-      <div class="flex-1 flex items-center justify-center overflow-hidden">
-        <div
-          bind:this={sliderRef}
-          onscroll={handleScroll}
-          class="flex items-center h-[280px] w-full"
-          style="overflow-x: scroll; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none;"
-        >
-          {#each allImages as image}
-            <div
-              class="flex-none h-full"
-              style="min-width: 100%; scroll-snap-align: start;"
-            >
-              <img
-                src={image.url}
-                alt={image.alt}
-                class="w-full h-full object-cover"
-              />
-            </div>
-          {/each}
-        </div>
+    <div class="tablet:hidden bg-black py-12">
+      <!-- Slider Container -->
+      <div
+        bind:this={sliderRef}
+        onscroll={handleScroll}
+        class="flex h-[280px] overflow-x-scroll"
+        style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none;"
+      >
+        {#each allImages as image}
+          <div class="w-full h-full shrink-0 snap-start">
+            <img
+              src={image.url}
+              alt={image.alt}
+              class="w-full h-full object-cover"
+            />
+          </div>
+        {/each}
       </div>
 
-      <!-- Navigation Dots - at bottom -->
-      <div class="flex justify-center items-center gap-3 py-4">
+      <!-- Navigation Dots -->
+      <div class="flex justify-center items-center gap-3 pt-12">
         {#each [0, 1, 2, 3, 4] as dotIndex}
           <button
             type="button"
             onclick={() => goToSlide(dotIndex * 2)}
             class="w-3 h-3 rounded-full transition-colors duration-200"
-            class:bg-primary={Math.floor(currentSlide / 2) === dotIndex}
-            class:bg-primary-green-muted={Math.floor(currentSlide / 2) !== dotIndex}
+            style="background-color: {Math.floor(currentSlide / 2) === dotIndex ? '#47c552' : '#4d7051'};"
             aria-label="Go to slide {dotIndex + 1}"
           ></button>
         {/each}

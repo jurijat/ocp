@@ -35,11 +35,11 @@
 >
   <!-- Left Content Container (2/3) -->
   <div
-    class="flex w-full tablet:w-2/3 flex-col gap-y-6 tablet:gap-y-3 tablet:p-4 tablet:px-[1vw] tablet:py-8 desktop:p-16 tablet:border-r-border-primary pt-6"
+    class="flex w-full tablet:w-2/3 flex-col gap-y-6 tablet:gap-y-3 tablet:px-4 tablet:py-8 desktop:p-16 tablet:border-r-border-primary pt-6"
   >
     <!-- Logos Section -->
     <div
-      class="flex flex-row w-full items-center h-12 tablet:h-[64px] p-4 justify-between"
+      class="flex flex-row w-full items-center h-12 tablet:h-[64px] p-4 tablet:py-4 desktop:py-8 desktop:pt-20 tablet:px-0 justify-between"
     >
       <div
         class="w-40 tablet:w-44 tablet:pl-4 h-12 tablet:h-[64px] desktop:h-16 desktop:w-60 flex items-center justify-center text-text-muted text-sm"
@@ -62,9 +62,9 @@
     </div>
 
     <!-- Title Section -->
-    <div class="flex flex-col p-4 pt-2 tablet:pt-10">
+    <div class="flex flex-col p-4 tablet:py-4 tablet:px-0 pt-2 tablet:pt-10">
       <h1
-        class="text-6xl tablet:text-[8vw] desktop:text-[160px] font-bold tracking-tighter leading-[0.92] tablet:leading-[0.85] desktop:leading-[0.90] wrap-break-word"
+        class="text-6xl tablet:text-[80px] desktop:text-[160px] font-bold tracking-tighter leading-[0.92] tablet:leading-[1.1] desktop:leading-[1.00] wrap-break-word"
       >
         <span class="text-primary block">OPENAPI</span>
         <span class="text-text-primary block">CONFERENCE</span>
@@ -137,13 +137,15 @@
     <!-- Register Button -->
     <div class="px-4 tablet:px-0">
       <div
-        class="group/btn bg-primary mt-4 tablet:mt-4 desktop:mt-10 rounded-full flex font-bold tracking-wide px-4 tablet:px-spacing-2xl items-center justify-between h-16 tablet:h-20 desktop:h-30 w-full hover:bg-primary-dark text-text-on-green text-xl tablet:text-3xl desktop:text-[42px] uppercase py-spacing-md transition-colors duration-transition-base pl-4 tablet:pl-10 shadow-md hover:shadow-lg cursor-pointer relative overflow-hidden"
+        class="group/btn bg-primary mt-4 tablet:mt-4 desktop:mt-12 rounded-full flex font-bold tracking-wide px-4 tablet:px-spacing-2xl items-center justify-between h-16 tablet:h-20 desktop:h-30 w-full hover:bg-primary-dark text-text-on-green text-xl tablet:text-3xl desktop:text-[42px] uppercase py-spacing-md transition-colors duration-transition-base pl-4 tablet:pl-10 shadow-md hover:shadow-lg cursor-pointer relative overflow-hidden"
       >
         <!-- Shimmer effect -->
-        <div class="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+        <div
+          class="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+        ></div>
         <span class="relative z-10">GET A TICKET</span>
         <div
-          class="w-12 h-12 tablet:w-16 tablet:h-16 desktop:w-24 desktop:h-24 mr-1 tablet:mr-3 bg-black rounded-full flex items-center justify-center shrink-0 ml-2 tablet:ml-4 relative z-10 transition-transform duration-300 group-hover/btn:scale-110"
+          class="w-12 h-12 tablet:w-16 tablet:h-16 desktop:w-24 desktop:h-24 -mr-1 bg-black rounded-full flex items-center justify-center shrink-0 ml-2 tablet:ml-4 relative z-10 transition-transform duration-300 group-hover/btn:scale-110"
         >
           <svg
             class="w-6 h-6 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7 text-primary ml-0.5"
@@ -158,14 +160,17 @@
 
     <!-- Countdown Timer -->
     <div
-      class="text-xs text-text-muted font-medium tracking-widest uppercase px-4 tablet:px-0 items-center w-full text-center tablet:text-left"
+      class="text-xs text-text-muted font-medium tracking-widest uppercase px-4 tablet:px-0 items-center w-full text-center tablet:text-left tablet:text-lg"
     >
-      {days} Days ~ {String(hours).padStart(2, '0')}:{String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
+      {days} Days ~ {String(hours).padStart(2, "0")}:{String(minutes).padStart(
+        2,
+        "0"
+      )}:{String(seconds).padStart(2, "0")}
     </div>
 
     <!-- Bottom Content with Social Links -->
     <div
-      class="flex items-center justify-between mt-auto pt-spacing-xl tablet:pb-4 px-4 tablet:px-0"
+      class="flex items-center justify-between mt-auto pt-spacing-xl tablet:pb-4 desktop:pb-8 px-4 tablet:px-0"
     >
       <SocialIcons />
       <div>
@@ -191,7 +196,9 @@
       )})"
     >
       <!-- Dark Overlay -->
-      <div class="absolute inset-0 bg-[#00000052] transition-colors duration-300 group-hover/loc:bg-[#00000080]"></div>
+      <div
+        class="absolute inset-0 bg-[#00000052] transition-colors duration-300 group-hover/loc:bg-[#00000080]"
+      ></div>
 
       <!-- Location Content Overlay -->
       <div

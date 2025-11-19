@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { asset } from '$app/paths';
+  import { asset } from "$app/paths";
 
   interface Speaker {
     name: string;
@@ -12,7 +12,9 @@
 
 <div class="flex items-center gap-3">
   <!-- Avatar -->
-  <div class="w-20 h-20 rounded-full overflow-hidden shrink-0">
+  <div
+    class="w-13 tablet:w-20 h-13 tablet:h-20 rounded-full overflow-hidden shrink-0"
+  >
     {#if speaker.avatar}
       <img
         src={speaker.avatar}
