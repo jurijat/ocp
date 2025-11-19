@@ -47,7 +47,9 @@
 
 <section class="w-full bg-bg-dark px-2 tablet:px-0">
   <!-- Gallery Container with border -->
-  <div class="border border-primary-green-muted rounded-4xl overflow-hidden">
+  <div
+    class="border border-primary-green-muted rounded-4xl tablet:rounded-none overflow-hidden"
+  >
     <!-- Mobile Slider -->
     <div class="tablet:hidden bg-black pt-12">
       <!-- Slider Container -->
@@ -85,13 +87,10 @@
       {#each rows as row}
         <div class="flex flex-row">
           {#each row as image}
-            <div class="w-1/4 aspect-[4/3] overflow-hidden">
-              <img
-                src={image.url}
-                alt={image.alt}
-                class="w-full h-full object-cover"
-              />
-            </div>
+            <div
+              class="w-1/4 aspect-4/3 overflow-hidden bg-center bg-no-repeat bg-cover"
+              style="background-image: url('{asset(image.url)}')"
+            ></div>
           {/each}
         </div>
       {/each}
