@@ -14,6 +14,15 @@
       timeRange: "09:15 — 10:40",
       items: [
         {
+          id: "breakfast",
+          time: "09:30",
+          category: "",
+          title: "EXECUTIVE BREAKFAST",
+          badge: "INVITE ONLY",
+          speakers: [],
+          icon: asset("/images/break-fest.svg"),
+        },
+        {
           id: "1",
           time: "09:15",
           category: "FOUNDATIONS",

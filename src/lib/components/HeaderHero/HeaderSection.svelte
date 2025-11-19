@@ -26,7 +26,7 @@
       </h1>
     </div>
   </div>
-  <div class="flex w-1/10 items-center justify-end">
+  <div class="flex w-2/10 tablet:w-1/10 items-center justify-end">
     <a
       {href}
       class="w-10 h-10 tablet:w-16 tablet:h-16 desktop:w-24 desktop:h-24 bg-black rounded-full flex items-center justify-center border border-primary-green-muted cursor-pointer hover:border-primary-dark transition-colors duration-200"
