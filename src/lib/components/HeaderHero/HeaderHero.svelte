@@ -35,7 +35,7 @@
 </script>
 
 <header
-  class="flex flex-col tablet:flex-row h-[710px] tablet:min-h-0 tablet:h-[clamp(800px,50vw+320px,1171px)] text-text-primary overflow-hidden"
+  class="flex flex-col tablet:flex-row h-[710px] tablet:min-h-0 tablet:h-[clamp(800px,50vw+320px,900px)] text-text-primary overflow-hidden desktop:h-[clamp(900px,50vw+320px,1117px)] desktop-xl:h-[clamp(1118px,50vw+320px,1280px)]"
 >
   <!-- Left Content Container (2/3) -->
   <div
@@ -74,7 +74,7 @@
     <!-- Title Section -->
     <div class="flex flex-col p-4 tablet:py-4 tablet:px-0 pt-2 tablet:pt-10">
       <div
-        class="text-[clamp(40px,5vw+32px,80px)] tablet:text-[clamp(80px,5vw+32px,180px)] desktop:text-[clamp(6rem,5vw+32px,10rem)] font-bold tracking-tighter leading-[0.92] tablet:leading-[1.1] desktop:leading-[1.00] desktop-xl:leading-[1.00] wrap-break-word"
+        class="text-[clamp(40px,5vw+32px,80px)] tablet:text-[clamp(80px,5vw+32px,160px)] desktop:text-[clamp(6rem,5vw+32px,10rem)] font-bold tracking-tighter leading-[0.92] tablet:leading-[1.1] desktop:leading-[1.00] desktop-xl:leading-[1.00] wrap-break-word"
       >
         <span class="text-primary block">OPENAPI</span>
         <span class="text-text-primary block">CONFERENCE</span>
