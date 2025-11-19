@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { asset } from "$app/paths";
+
   type IconType = "arrow-down" | "plus";
   type BackgroundColor = "white" | "black";
 
@@ -34,20 +36,20 @@
     {href}
     target="_blank"
     rel="noopener noreferrer"
-    class="group p-4 tablet:p-4 desktop:p-8 desktop:px-16 flex flex-col tablet:flex-row h-[181px] tablet:h-[104px] desktop:h-[280px] items-center justify-center tablet:justify-between rounded-2xl tablet:rounded-none {bgClass} hover:bg-primary transition-colors duration-300 cursor-pointer block"
+    class="group p-4 tablet:p-4 desktop:p-8 desktop:px-16 flex flex-col tablet:flex-row h-[181px] tablet:h-[104px] desktop:h-[210px] desktop-xl:h-[280px] items-center justify-center tablet:justify-between rounded-2xl tablet:rounded-none {bgClass} hover:bg-primary active:bg-primary-green-dark transition-colors duration-200 cursor-pointer block"
   >
     <!-- Title and Subtitle -->
     <div
       class="flex flex-col gap-y-1 tablet:gap-y-1 text-center tablet:text-left"
     >
       <div
-        class="text-2xl tablet:text-2xl desktop:text-7xl uppercase font-bold {textColor} tracking-wide transition-colors duration-300 group-hover:text-text-on-green"
+        class="text-2xl desktop:text-[44px] desktop-xl:text-7xl uppercase font-bold {textColor} tracking-wide transition-colors duration-300 group-hover:text-text-on-green"
       >
         {title}
       </div>
       {#if subtitle}
         <span
-          class="text-sm tablet:text-md desktop:text-2xl tracking-widest {subtitleColor} uppercase font-bold transition-colors duration-300 group-hover:text-text-on-green"
+          class="text-sm tablet:text-md desktop:text-xl desktop-xl:text-2xl tracking-widest {subtitleColor} uppercase font-bold transition-colors duration-300 group-hover:text-text-on-green"
         >
           {subtitle}
         </span>
@@ -55,18 +57,20 @@
     </div>
 
     <!-- Logo/Icon -->
-    <div class="flex items-center justify-center mt-3 tablet:mt-0">
+    <div
+      class="flex items-center justify-center mt-3 tablet:mt-0 pt-4 tablet:pt-0"
+    >
       {#if imageUrl}
         <!-- Image Display -->
         <img
           src={imageUrl}
           alt={imageAlt}
-          class="h-8 w-24 tablet:h-14 tablet:w-30 desktop:h-24 desktop:w-50"
+          class="h-8 w-24 tablet:h-14 tablet:w-30 desktop:h-24 desktop:w-50 desktop-xl:w-70"
         />
       {:else if iconType}
         <!-- Icon Display -->
         <div
-          class="w-16 h-16 tablet:w-16 tablet:h-16 desktop:w-24 desktop:h-24 bg-black rounded-full flex items-center justify-center border cursor-pointer hover:border-primary-dark transition-colors duration-200"
+          class="w-12 h-12 tablet:w-12 tablet:h-12 desktop:w-24 desktop:h-24 bg-black rounded-full flex items-center justify-center border cursor-pointer hover:border-primary-dark transition-colors duration-300"
         >
           {#if iconType === "arrow-down"}
             <!-- Arrow Down Icon -->
@@ -79,13 +83,10 @@
             </svg>
           {:else if iconType === "plus"}
             <!-- Plus Icon -->
-            <svg
-              class="w-8 h-8 tablet:w-10 tablet:h-10 text-primary font-black"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-            </svg>
+            <img
+              class="w-4 h-4 tablet:w-5 tablet:h-5 text-primary font-black"
+              src={asset("/images/plus.svg")}
+            />
           {/if}
         </div>
       {/if}

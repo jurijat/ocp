@@ -125,9 +125,10 @@
   /* ==================== */
 
   /* Custom breakpoints (mobile-first) */
-  --breakpoint-mobile: 24.375rem;   /* 390px */
-  --breakpoint-tablet: 60rem;       /* 960px */
-  --breakpoint-desktop: 108rem;     /* 1728px */
+  --breakpoint-mobile: 24.375rem; /* 390px */
+  --breakpoint-tablet: 60rem; /* 960px */
+  --breakpoint-desktop: 73.75rem; /* 1180px */
+  --breakpoint-desktop-xl: 108rem; /* 1728px */
 
   /* Tailwind defaults */
   --breakpoint-sm: 640px;

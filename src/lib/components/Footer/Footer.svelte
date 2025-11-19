@@ -3,7 +3,7 @@
 </script>
 
 <footer
-  class="p-4 tablet:p-8 desktop:p-16 flex flex-col tablet:flex-row gap-6 tablet:gap-0 min-h-[210px] items-center bg-black"
+  class="p-4 tablet:p-8 desktop-xl:p-16 flex flex-col tablet:flex-row gap-6 tablet:gap-0 min-h-[210px] items-center bg-black"
 >
   <!-- Mobile Layout -->
   <div class="tablet:hidden flex flex-col items-center gap-6 w-full">
@@ -12,7 +12,7 @@
       For any questions about the OAI Track, please contact
       <a
         href="mailto:oai-track@openapis.org"
-        class="text-text-primary hover:text-primary transition-colors"
+        class="text-text-primary hover:text-primary active:text-primary-green-dark transition-colors"
       >
         oai-track@openapis.org
       </a>
@@ -26,7 +26,7 @@
       href="https://openapis.org"
       target="_blank"
       rel="noopener noreferrer"
-      class="text-text-secondary hover:text-primary text-sm font-medium transition-colors tracking-widest uppercase"
+      class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm font-medium transition-colors tracking-widest uppercase"
     >
       OPENAPIS.ORG
     </a>
@@ -36,7 +36,7 @@
       href="https://github.com/OAI/.github/blob/main/.github/CODE_OF_CONDUCT.md"
       target="_blank"
       rel="noopener noreferrer"
-      class="text-text-secondary hover:text-primary text-sm font-medium transition-colors tracking-widest uppercase flex items-center gap-2"
+      class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm font-medium transition-colors tracking-widest uppercase flex items-center gap-2"
     >
       Code of Conduct
       <svg
@@ -61,7 +61,7 @@
         For any questions about the OAI Track, please contact
         <a
           href="mailto:oai-track@openapis.org"
-          class="text-text-primary hover:text-primary transition-colors"
+          class="text-text-primary hover:text-primary active:text-primary-green-dark transition-colors"
         >
           oai-track@openapis.org
         </a>
@@ -76,7 +76,7 @@
           href="https://openapis.org"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-text-secondary hover:text-primary text-sm font-medium transition-colors tracking-widest uppercase"
+          class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm font-medium transition-colors tracking-widest uppercase"
         >
           OPENAPIS.ORG
         </a>
@@ -86,7 +86,7 @@
           href="https://github.com/OAI/.github/blob/main/.github/CODE_OF_CONDUCT.md"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-text-secondary hover:text-primary text-sm font-medium transition-colors tracking-widest uppercase flex items-center gap-2"
+          class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm font-medium transition-colors tracking-widest uppercase flex items-center gap-2"
         >
           Code of Conduct
           <svg

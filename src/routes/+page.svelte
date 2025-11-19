@@ -7,7 +7,7 @@
   import HeaderHero from "$lib/components/HeaderHero/HeaderHero.svelte";
   import HeaderSection from "$lib/components/HeaderHero/HeaderSection.svelte";
 
-  const sections2 = [
+  const section = [
     {
       id: "foundations",
       title: "FOUNDATIONS",
@@ -21,6 +21,7 @@
           badge: "INVITE ONLY",
           speakers: [],
           icon: asset("/images/break-fest.svg"),
+          disableHover: true,
         },
         {
           id: "1",
@@ -208,13 +209,14 @@
     <HeaderHero />
     <DualHeaderSection
       title="Want to learn more?"
-      subtitle="Checkout Masterclasses by API Master on December 10th"
-      imageUrl={asset("/images/api_masters.svg")}
-      imageAlt="API Master Logo"
+      subtitle="Checkout Masterclasses by API Masters on December 10th"
+      imageUrl={asset("/images/api_masters.png")}
+      imageAlt="API Masters Logo"
+      href="https://apimasters.fr/our-masterclasses/entry/353/"
     />
     <HeaderSection title="AGENDA" href="#agenda" />
     <div id="agenda">
-      <AgendaList sections={sections2} />
+      <AgendaList sections={section} />
     </div>
     <HeaderSection title="PREVIOUS EVENTS" href="#previous-events" />
     <div id="previous-events">
@@ -223,9 +225,9 @@
 
     <DualHeaderSection
       title="Subscribe"
-      subtitle="for OPENAPI Conf updates"
+      subtitle="For OpenAPI Initiative Updates"
       iconType="plus"
-      href="https://www.openapis.org/"
+      href="https://www.openapis.org/#fws_691e0c92cb468"
     />
     <Footer />
   </div>

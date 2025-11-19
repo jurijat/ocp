@@ -6,7 +6,7 @@
 
   // Event details
   const eventTitle = "OpenAPI Conference Paris 2025";
-  const eventDescription = "Join us at the OpenAPI Conference in Paris";
+  const eventDescription = "Join us at the OpenAPI Conference in Paris. More info: https://conference.openapis.org";
   const eventLocation =
     "CNIT Forest, 2 Pl. de la Defense, 92092 Puteaux, France";
   const startDate = "2025-12-11T09:00:00";
@@ -145,7 +145,7 @@ END:VCALENDAR`;
             target={option.href ? "_blank" : undefined}
             rel={option.href ? "noopener noreferrer" : undefined}
             onclick={option.onclick ? (e) => { e.preventDefault(); option.onclick?.(); } : undefined}
-            class="flex items-center gap-3 p-4 rounded-lg hover:border-primary hover:bg-primary/10 transition-colors cursor-pointer"
+            class="flex items-center gap-3 p-4 rounded-lg hover:border-primary hover:bg-primary/10 active:bg-primary/20 transition-colors cursor-pointer"
             style="border: 1px solid #4d7051"
           >
             <svg

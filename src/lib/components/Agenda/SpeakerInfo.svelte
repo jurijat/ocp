@@ -13,7 +13,7 @@
 <div class="flex items-center gap-3">
   <!-- Avatar -->
   <div
-    class="w-13 tablet:w-10 h-13 tablet:h-10 desktop:h-20 desktop:w-20 rounded-full overflow-hidden shrink-0"
+    class="w-13 tablet:w-10 h-13 tablet:h-10 desktop-xl:h-20 desktop-xl:w-20 rounded-full overflow-hidden shrink-0"
   >
     {#if speaker.avatar}
       <img
@@ -37,12 +37,12 @@
   <!-- Speaker Details -->
   <div class="flex flex-col gap-0.5">
     <div
-      class="text-lg font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green"
+      class="text-lg desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
     >
       {speaker.name}
     </div>
     <div
-      class="text-xs text-text-muted uppercase group-hover:text-text-on-green tracking-widest"
+      class="text-xs desktop:text-xl text-text-muted uppercase group-hover:text-text-on-green tracking-widest transition-colors duration-transition-base"
     >
       {speaker.company}
     </div>

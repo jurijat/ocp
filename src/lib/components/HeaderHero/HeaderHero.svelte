@@ -35,7 +35,7 @@
 </script>
 
 <header
-  class="flex flex-col tablet:flex-row h-[710px] tablet:min-h-0 tablet:h-[clamp(800px,50vw+320px,1280px)] text-text-primary overflow-hidden"
+  class="flex flex-col tablet:flex-row h-[710px] tablet:min-h-0 tablet:h-[clamp(800px,50vw+320px,1171px)] text-text-primary overflow-hidden"
 >
   <!-- Left Content Container (2/3) -->
   <div
@@ -46,7 +46,7 @@
       class="flex flex-row w-full items-center h-12 tablet:h-[64px] p-4 tablet:py-4 desktop:py-8 desktop:pt-20 tablet:px-0 justify-between"
     >
       <div
-        class="w-40 tablet:w-44 tablet:pl-4 h-12 tablet:h-[64px] desktop:h-16 desktop:w-60 flex items-center justify-center text-text-muted text-sm"
+        class="w-40 tablet:w-44 tablet:pl-4 h-12 tablet:h-[64px] desktop-xl:h-16 desktop-xl:w-60 flex items-center justify-center text-text-muted text-sm"
       >
         <img
           src={asset("/images/openapi_con_logo.svg")}
@@ -57,23 +57,29 @@
       <div
         class="w-16 tablet:w-24 h-12 tablet:h-[64px] flex items-center justify-center text-text-muted text-sm"
       >
-        <img
-          src={asset("/images/img_hosted_by_fost.png")}
-          alt="Hosted by Fost Logo"
-          class="w-16 tablet:w-24 h-3 tablet:h-[16px]"
-        />
+        <a
+          href="https://www.futureofsoftwaretechnologies.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={asset("/images/img_hosted_by_fost.png")}
+            alt="Hosted by Fost Logo"
+            class="w-16 tablet:w-24 h-3 tablet:h-[16px]"
+          />
+        </a>
       </div>
     </div>
 
     <!-- Title Section -->
     <div class="flex flex-col p-4 tablet:py-4 tablet:px-0 pt-2 tablet:pt-10">
-      <h1
-        class="text-6xl tablet:text-[clamp(80px,5vw+32px,160px)] font-bold tracking-tighter leading-[0.92] tablet:leading-[1.1] desktop:leading-[1.00] wrap-break-word"
+      <div
+        class="text-[clamp(40px,5vw+32px,80px)] tablet:text-[clamp(80px,5vw+32px,180px)] desktop:text-[clamp(6rem,5vw+32px,10rem)] font-bold tracking-tighter leading-[0.92] tablet:leading-[1.1] desktop:leading-[1.00] desktop-xl:leading-[1.00] wrap-break-word"
       >
         <span class="text-primary block">OPENAPI</span>
         <span class="text-text-primary block">CONFERENCE</span>
         <span class="text-text-primary block">IN PARIS</span>
-      </h1>
+      </div>
     </div>
 
     <!-- Decorative Line (tablet/desktop) -->
@@ -91,7 +97,7 @@
       class="flex flex-row items-center justify-between gap-2 tablet:gap-spacing-lg border-0 tablet:border-0 rounded-lg tablet:rounded-none p-3 tablet:p-0 rounded-b-4xl h-16 bg-bg-dark tablet:bg-transparent relative z-10"
     >
       <div
-        class="text-base tablet:text-md tracking-widest desktop:text-3xl font-bold text-text-primary uppercase"
+        class="text-sm tablet:text-md tracking-widest desktop:text-xl desktop-xl:text-3xl font-bold text-text-primary uppercase"
       >
         11 December, 2025
       </div>
@@ -115,8 +121,11 @@
     </div>
 
     <!-- Mobile-only Location Card (beneath date section) -->
-    <div
-      class="tablet:hidden p-4 relative h-[152px] -mt-12 rounded-b-4xl overflow-hidden bg-cover bg-center"
+    <a
+      href="https://maps.google.com/?q=CNIT+Forest,+2+Pl.+de+la+Defense,+92092+Puteaux,+France"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="tablet:hidden p-4 relative h-[152px] -mt-12 rounded-b-4xl overflow-hidden bg-cover bg-center block cursor-pointer"
       style="background-image: url({asset(
         '/images/background/background_top_right.jpg'
       )})"
@@ -148,26 +157,26 @@
           </svg>
         </div>
       </div>
-    </div>
+    </a>
 
     <!-- Register Button -->
     <div class="px-4 tablet:px-0">
       <a
-        href="https://www.openapis.org/"
+        href="https://ticket.apidays.global/event/apidays-paris-2025/3cccd07f-acb2-466e-8d91-cb1f208ecf42/openapi-conference"
         target="_blank"
         rel="noopener noreferrer"
-        class="group/btn bg-primary mt-4 tablet:mt-4 desktop:mt-12 rounded-full flex font-bold tracking-wide px-4 tablet:px-spacing-2xl items-center justify-between h-16 tablet:h-20 desktop:h-30 w-full hover:bg-primary-dark text-text-on-green text-xl tablet:text-3xl desktop:text-[42px] uppercase py-spacing-md transition-colors duration-transition-base pl-4 tablet:pl-10 shadow-md hover:shadow-lg cursor-pointer relative overflow-hidden"
+        class="group/btn bg-primary mt-4 tablet:mt-4 desktop-xl:mt-12 rounded-full flex font-bold tracking-wide px-4 tablet:px-spacing-2xl items-center justify-between h-16 tablet:h-20 desktop-xl:h-30 w-full active:bg-primary-green-dark text-text-on-green text-xl tablet:text-3xl desktop-xl:text-[42px] uppercase py-spacing-md transition-colors duration-transition-base pl-4 tablet:pl-10 shadow-md hover:shadow-lg cursor-pointer relative overflow-hidden"
       >
         <!-- Shimmer effect -->
         <div
-          class="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+          class="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1500 bg-[linear-gradient(120deg,transparent_35%,rgba(255,255,255,0.9)_50%,transparent_65%)]"
         ></div>
         <span class="relative z-10">GET A TICKET</span>
         <div
-          class="w-12 h-12 tablet:w-16 tablet:h-16 desktop:w-24 desktop:h-24 -mr-1 bg-black rounded-full flex items-center justify-center shrink-0 ml-2 tablet:ml-4 relative z-10 transition-transform duration-300 group-hover/btn:scale-110"
+          class="w-12 h-12 tablet:w-16 tablet:h-16 desktop-xl:w-24 desktop-xl:h-24 -mr-1 bg-black rounded-full flex items-center justify-center shrink-0 ml-2 tablet:ml-4 relative z-10 transition-transform duration-500 group-hover/btn:scale-110 group-active/btn:scale-90"
         >
           <svg
-            class="w-6 h-6 tablet:w-5 tablet:h-5 desktop:w-7 desktop:h-7 text-primary ml-0.5"
+            class="w-6 h-6 tablet:w-5 tablet:h-5 desktop-xl:w-7 desktop-xl:h-7 text-primary ml-0.5 transition-transform duration-500 group-hover/btn:scale-[0.909] group-active/btn:scale-[1.111]"
             viewBox="0 0 24 24"
             fill="currentColor"
           >
@@ -179,7 +188,7 @@
 
     <!-- Countdown Timer -->
     <div
-      class="flex text-xs text-text-muted font-medium tracking-widest uppercase px-4 tablet:px-0 items-center justify-center tablet:justify-start w-full tablet:text-md desktop:text-lg"
+      class="flex text-xs text-text-muted font-medium tracking-widest uppercase px-4 tablet:px-0 items-center justify-center tablet:justify-start w-full tablet:text-md desktop:text-lg desktop-xl:text-lg"
     >
       {days} Days
       <img
@@ -195,13 +204,13 @@
 
     <!-- Bottom Content with Social Links -->
     <div
-      class="flex items-center justify-between mt-auto pt-spacing-xl tablet:pb-4 desktop:pb-8 px-4 tablet:px-0"
+      class="flex items-center justify-between mt-auto pt-spacing-xl tablet:pb-4 desktop-xl:pb-8 px-4 tablet:px-0"
     >
       <SocialIcons />
       <div>
         <a
           href="https://openapis.org"
-          class="text-text-secondary hover:text-primary text-sm font-medium transition-colors duration-transition-fast tracking-widest"
+          class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm desktop:text-base font-medium transition-colors duration-transition-fast tracking-widest"
         >
           OPENAPIS.ORG
         </a>
@@ -210,8 +219,11 @@
   </div>
 
   <!-- Right Content Container (1/3) - Hidden on mobile -->
-  <div
-    class="group/loc hidden tablet:flex flex-col w-full tablet:w-1/3 min-h-[300px] tablet:min-h-0 border-0 tablet:border-l tablet:border-l-border-primary bg-bg-dark-elevated overflow-hidden relative"
+  <a
+    href="https://maps.google.com/?q=CNIT+Forest,+2+Pl.+de+la+Defense,+92092+Puteaux,+France"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="group/loc hidden tablet:flex flex-col w-full tablet:w-1/3 min-h-[300px] tablet:min-h-0 border-0 tablet:border-l tablet:border-l-border-primary bg-bg-dark-elevated overflow-hidden relative cursor-pointer"
   >
     <!-- Background Image -->
     <div
@@ -222,19 +234,19 @@
     >
       <!-- Dark Overlay -->
       <div
-        class="absolute inset-0 bg-[#00000052] transition-colors duration-300 group-hover/loc:bg-[#00000080]"
+        class="absolute inset-0 bg-[#00000052] transition-colors duration-300 group-hover/loc:bg-[#00000080] group-active/loc:bg-[#000000a0]"
       ></div>
 
       <!-- Location Content Overlay -->
       <div
-        class="absolute px-4 py-4 tablet:px-8 tablet:py-8 desktop:px-16 desktop:py-16 inset-0 flex flex-col justify-between"
+        class="absolute px-4 py-4 tablet:px-8 tablet:py-8 desktop-xl:px-16 desktop-xl:py-16 inset-0 flex flex-col justify-between"
       >
         <!-- Location Pin Icon -->
         <div
-          class="shrink-0 bg-black rounded-full flex items-center w-12 h-12 tablet:w-16 tablet:h-16 desktop:w-24 desktop:h-24 justify-center transition-colors duration-300 group-hover/loc:bg-primary"
+          class="shrink-0 bg-black rounded-full flex items-center w-12 h-12 tablet:w-16 tablet:h-16 desktop-xl:w-24 desktop-xl:h-24 justify-center transition-colors duration-300 group-hover/loc:bg-primary"
         >
           <svg
-            class="w-6 h-6 tablet:w-10 tablet:h-10 desktop:w-14 desktop:h-14 text-primary transition-colors duration-300 group-hover/loc:text-black"
+            class="w-6 h-6 tablet:w-10 tablet:h-10 desktop-xl:w-14 desktop-xl:h-14 text-primary transition-colors duration-300 group-hover/loc:text-black"
             viewBox="0 0 24 24"
             fill="currentColor"
           >
@@ -245,9 +257,9 @@
         </div>
 
         <!-- Location Details at Bottom -->
-        <div class="flex flex-col gap-2 tablet:gap-4 desktop:gap-6 shrink-0">
+        <div class="flex flex-col gap-2 tablet:gap-4 desktop-xl:gap-6 shrink-0">
           <h2
-            class="text-xl tablet:text-2xl desktop:text-3xl font-bold text-text-primary leading-tight tracking-widest transition-colors duration-300 group-hover/loc:text-primary"
+            class="text-xl tablet:text-2xl desktop-xl:text-3xl font-bold text-text-primary leading-tight tracking-widest transition-colors duration-300 group-hover/loc:text-primary"
           >
             CNIT FOREST, <br />PARIS
           </h2>
@@ -259,7 +271,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </a>
 </header>
 
 <!-- Calendar Popup -->

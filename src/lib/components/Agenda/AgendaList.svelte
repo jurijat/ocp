@@ -16,6 +16,7 @@
     speakers?: Speaker[];
     badge?: string;
     icon?: string;
+    disableHover?: boolean;
   }
 
   interface Section {
@@ -119,20 +120,39 @@
           <div
             class="flex flex-col md:flex-row gap-spacing-lg w-full h-auto tablet:h-[252px] desktop:h-[490px]"
           >
-            <div class="three-item-1" style="--width-desktop: {widths.width1};">
-              <AgendaItemCard item={section.items[0]} />
+            <div
+              class="three-item-1"
+              style="--width-desktop-xl: {widths.width1};"
+            >
+              <AgendaItemCard
+                item={section.items[0]}
+                disableHover={section.items[0].disableHover}
+              />
             </div>
-            <div class="three-item-2" style="--width-desktop: {widths.width2};">
-              <AgendaItemCard item={section.items[1]} />
+            <div
+              class="three-item-2"
+              style="--width-desktop-xl: {widths.width2};"
+            >
+              <AgendaItemCard
+                item={section.items[1]}
+                disableHover={section.items[1].disableHover}
+              />
             </div>
-            <div class="three-item-3" style="--width-desktop: {widths.width3};">
-              <AgendaItemCard item={section.items[2]} isLastInRow={true} />
+            <div
+              class="three-item-3"
+              style="--width-desktop-xl: {widths.width3};"
+            >
+              <AgendaItemCard
+                item={section.items[2]}
+                isLastInRow={true}
+                disableHover={section.items[2].disableHover}
+              />
             </div>
           </div>
         {:else}
           <!-- Other sections: pairs layout -->
           <div class="flex flex-col gap-spacing-lg">
-            {#each chunkIntoPairs(section.items) as pair}
+            {#each chunkIntoPairs<AgendaItem>(section.items) as pair}
               {#if pair.length === 2}
                 {@const widths = calculateBlockPercents(
                   pair[0].title,
@@ -144,21 +164,32 @@
                 >
                   <div
                     class="pair-item-1"
-                    style="--width-desktop: {widths.width1};"
+                    style="--width-desktop-xl: {widths.width1};"
                   >
-                    <AgendaItemCard item={pair[0]} />
+                    <AgendaItemCard
+                      item={pair[0]}
+                      disableHover={pair[0].disableHover}
+                    />
                   </div>
                   <div
                     class="pair-item-2"
-                    style="--width-desktop: {widths.width2};"
+                    style="--width-desktop-xl: {widths.width2};"
                   >
-                    <AgendaItemCard item={pair[1]} isLastInRow={true} />
+                    <AgendaItemCard
+                      item={pair[1]}
+                      isLastInRow={true}
+                      disableHover={pair[1].disableHover}
+                    />
                   </div>
                 </div>
               {:else}
                 <!-- Single item (odd number) -->
                 <div class="w-full">
-                  <AgendaItemCard item={pair[0]} isLastInRow={true} />
+                  <AgendaItemCard
+                    item={pair[0]}
+                    isLastInRow={true}
+                    disableHover={pair[0].disableHover}
+                  />
                 </div>
               {/if}
             {/each}
