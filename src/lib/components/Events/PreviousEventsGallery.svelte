@@ -48,7 +48,7 @@
 <section class="w-full bg-bg-dark px-2 tablet:px-0">
   <!-- Gallery Container with border -->
   <div
-    class="border border-primary-green-muted rounded-4xl tablet:rounded-none overflow-hidden"
+    class="border border-primary-green-muted rounded-4xl tablet:rounded-none overflow-hidden relative"
   >
     <!-- Mobile Slider -->
     <div class="tablet:hidden bg-black">
@@ -56,20 +56,23 @@
       <div
         bind:this={sliderRef}
         onscroll={handleScroll}
-        class="flex h-[420px] overflow-x-scroll"
+        class="flex h-[590px] overflow-x-scroll items-center"
         style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; touch-action: pan-x;"
       >
         {#each allImages as image}
-          <div class="w-full shrink-0 snap-start">
-            <div class="w-full h-full py-[30px] px-[10px]">
-              <img src={image.url} alt={image.alt} class="w-full h-full object-cover" />
-            </div>
+          <div class="w-full shrink-0 snap-start h-[330px] px-2.5">
+            <div
+              class="w-full h-full pt-[40px]"
+              style="background-image: url('{image.url}'); background-size: cover; background-position: center;"
+            ></div>
           </div>
         {/each}
       </div>
 
       <!-- Navigation Dots -->
-      <div class="flex justify-center items-center gap-3 pt-2 pb-2">
+      <div
+        class="flex absolute bottom-7 z-20 justify-center items-center gap-3 w-full"
+      >
         {#each allImages as image, index}
           <button
             type="button"
@@ -77,7 +80,7 @@
             class="w-2 h-2 rounded-full transition-colors duration-200"
             style="background-color: {currentSlide === index
               ? '#47c552'
-              : '#4d7051'};"
+              : '#333'};"
             aria-label="Go to slide {index + 1}"
           ></button>
         {/each}
