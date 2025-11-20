@@ -29,7 +29,7 @@
 </script>
 
 <div
-  class="bg-black border-b md:border-0 md:border-b py-8 px-4 tablet:p-4 tablet:py-8 desktop:p-16 flex flex-col justify-between h-full transition-colors duration-transition-base {disableHover
+  class="bg-black border-b md:border-0 md:border-b py-8 px-4 tablet:p-4 tablet:py-8 desktop:p-16 desktop-xxl:p-24 flex flex-col justify-between h-full transition-colors duration-transition-base {disableHover
     ? ''
     : 'hover:bg-primary group'} {isLastInRow
     ? ''
@@ -114,7 +114,7 @@
       {:else if item.badge}
         <!-- Badge shown at bottom left on mobile -->
         <div
-          class="text-xs flex items-center text-text-muted desktop:text-xl uppercase desktop-xl:-ml-6 desktop-xl:-mb-6 desktop-xl:h-20 tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
+          class="text-xs flex items-center text-text-muted desktop:text-xl uppercase desktop-xl:-ml-12 desktop-xl:-mb-12 desktop-xl:h-20 tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
         >
           {item.badge}
         </div>
@@ -123,7 +123,7 @@
 
     <!-- Icon (if present) - positioned at bottom right -->
     {#if item.icon}
-      <div class="flex items-end justify-end shrink-0 ml-4">
+      <div class="flex items-end justify-end shrink-0 ml-4 desktop-xl:-mb-6">
         <img src={item.icon} alt="" class="w-16 tablet:w-26 h-auto" />
       </div>
     {/if}

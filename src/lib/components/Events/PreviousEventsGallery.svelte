@@ -61,7 +61,7 @@
       >
         {#each allImages as image}
           <div class="w-full h-full shrink-0 snap-start flex items-center">
-            <img src={image.url} alt={image.alt} class="w-full object-cover" />
+            <img src={image.url} alt={image.alt} class="w-full h-full object-cover" />
           </div>
         {/each}
       </div>

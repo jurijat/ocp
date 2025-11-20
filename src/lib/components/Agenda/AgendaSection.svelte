@@ -7,7 +7,7 @@
 </script>
 
 <div
-  class="w-full pt-12 desktop:pt-16 px-4 desktop:px-16 pb-6 desktop:pb-10 flex flex-col desktop:flex-row desktop:items-center desktop:justify-between border-b border-border-primary gap-2.5 desktop:gap-0"
+  class="w-full pt-12 desktop:pt-16 px-4 desktop:px-16 pb-6 desktop:pb-10 desktop-xxl:px-24 flex flex-col desktop:flex-row desktop:items-center desktop:justify-between border-b border-border-primary gap-2.5 desktop:gap-0"
   class:border-t={activeBorder}
 >
   <div

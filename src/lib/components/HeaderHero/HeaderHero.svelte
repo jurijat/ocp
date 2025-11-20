@@ -243,14 +243,14 @@
 
       <!-- Location Content Overlay -->
       <div
-        class="absolute px-4 py-4 tablet:px-8 tablet:pb-16 tablet:py-8 desktop-xxl:px-16 desktop-xxl:py-16 inset-0 flex flex-col justify-between"
+        class="absolute px-4 py-4 tablet:px-8 tablet:pb-16 tablet:py-8 desktop-xl:p-16 inset-0 flex flex-col justify-between"
       >
         <!-- Location Pin Icon -->
         <div
-          class="shrink-0 bg-black rounded-full flex items-center w-12 h-12 tablet:w-16 tablet:h-16 desktop-xxl:w-24 desktop-xxl:h-24 justify-center transition-colors duration-300 group-hover/loc:bg-primary"
+          class="shrink-0 bg-black rounded-full flex items-center w-12 h-12 tablet:w-16 tablet:h-16 desktop-xl:w-24 desktop-xl:h-24 justify-center transition-colors duration-300 group-hover/loc:bg-primary"
         >
           <svg
-            class="w-6 h-6 tablet:w-10 tablet:h-10 desktop-xxl:w-14 desktop-xxl:h-14 text-primary transition-colors duration-300 group-hover/loc:text-black"
+            class="w-6 h-6 tablet:w-10 tablet:h-10 desktop-xl:w-14 desktop-xl:h-14 text-primary transition-colors duration-300 group-hover/loc:text-black"
             viewBox="0 0 24 24"
             fill="currentColor"
           >
@@ -265,12 +265,12 @@
           class="flex flex-col gap-2 tablet:gap-8 desktop-xxl:gap-6 shrink-0"
         >
           <div
-            class="text-xl tablet:text-2xl desktop-xxl:text-3xl font-bold text-text-primary leading-tight tracking-widest transition-colors duration-300 group-hover/loc:text-primary"
+            class="text-xl tablet:text-2xl desktop-xl:text-[44px] desktop-xxl:text-3xl font-bold text-text-primary leading-tight tracking-widest transition-colors duration-300 group-hover/loc:text-primary"
           >
             CNIT FOREST, <br />PARIS
           </div>
           <div
-            class="text-xs tablet:text-sm text-text-muted leading-tight tracking-widest transition-colors duration-300 group-hover/loc:text-white"
+            class="text-xs tablet:text-sm text-text-muted leading-tight tracking-widest desktop-xl:text-[13px] desktop-xl:leading-[20px] transition-colors duration-300 group-hover/loc:text-white"
           >
             2 PL. DE LA DEFENSE,<br />92092 PUTEAUX,<br />FRANCE
           </div>

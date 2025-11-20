@@ -11,7 +11,7 @@
 </script>
 
 <div
-  class="flex gap-3 items-start desktop-xl:h-20 desktop-xl:items-center desktop-xl:-ml-6 desktop-xl:-mb-6"
+  class="flex gap-3 items-start desktop-xl:h-20 desktop-xl:items-center desktop-xl:-ml-12 desktop-xl:-mb-12"
 >
   <!-- Avatar -->
   <div
