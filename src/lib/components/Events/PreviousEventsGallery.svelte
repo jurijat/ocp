@@ -51,7 +51,7 @@
     class="border border-primary-green-muted rounded-4xl tablet:rounded-none overflow-hidden relative"
   >
     <!-- Mobile Slider -->
-    <div class="tablet:hidden bg-black relative h-[590px]">
+    <div class="tablet:hidden bg-black relative h-[400px]">
       <!-- Slider Container -->
       <div
         bind:this={sliderRef}
@@ -71,7 +71,7 @@
 
       <!-- Gradient Overlay -->
       <div
-        class="absolute bottom-0 left-0 w-full h-16 bg-linear-to-t from-black/80 to-transparent backdrop-blur-[2px] z-10 pointer-events-none"
+        class="absolute bottom-0 left-0 w-full h-16 bg-linear-to-t from-black/80 to-transparent z-10 pointer-events-none"
       ></div>
 
       <!-- Navigation Dots -->
