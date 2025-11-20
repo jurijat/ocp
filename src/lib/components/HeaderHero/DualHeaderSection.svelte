@@ -31,12 +31,12 @@
 </script>
 
 <!-- Outer container with mobile padding -->
-<div class="px-4 tablet:px-0 mt-10 tablet:mt-0 mb-2">
+<div class="px-2 tablet:px-0 mt-10 tablet:mt-0 mb-2">
   <a
     {href}
     target="_blank"
     rel="noopener noreferrer"
-    class="group p-4 tablet:p-4 desktop:p-8 desktop:px-16 flex flex-col tablet:flex-row h-[181px] tablet:h-[104px] desktop:h-[210px] desktop-xl:h-[280px] items-center justify-center tablet:justify-between rounded-2xl tablet:rounded-none {bgClass} hover:bg-primary active:bg-primary-green-dark transition-colors duration-200 cursor-pointer block"
+    class="group p-4 tablet:p-4 desktop:p-8 desktop:px-16 flex flex-col tablet:flex-row h-[181px] tablet:h-[104px] desktop:h-[210px] desktop-xl:h-[280px] items-center justify-center tablet:justify-between rounded-4xl tablet:rounded-none {bgClass} hover:bg-primary active:bg-primary-green-dark transition-colors duration-200 cursor-pointer block"
   >
     <!-- Title and Subtitle -->
     <div
@@ -65,7 +65,7 @@
         <img
           src={imageUrl}
           alt={imageAlt}
-          class="h-8 w-24 tablet:h-14 tablet:w-30 desktop:h-24 desktop:w-50 desktop-xl:w-70"
+          class="h-[33px] w-[100px] tablet:h-14 tablet:w-30 desktop:h-24 desktop:w-50 desktop-xl:w-70"
         />
       {:else if iconType}
         <!-- Icon Display -->

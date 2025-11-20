@@ -35,27 +35,27 @@
 </script>
 
 <header
-  class="flex flex-col tablet:flex-row h-[710px] tablet:min-h-0 tablet:h-[clamp(800px,50vw+320px,900px)] text-text-primary overflow-hidden desktop:h-[clamp(900px,50vw+320px,1117px)] desktop-xl:h-[clamp(1118px,50vw+320px,1280px)]"
+  class="flex flex-col tablet:flex-row h-[667px] tablet:min-h-0 tablet:h-[clamp(640px,50vw+160px,900px)] text-text-primary overflow-hidden desktop:h-[clamp(900px,50vw+320px,1117px)] desktop-xl:h-[clamp(1118px,50vw+320px,1280px)]"
 >
   <!-- Left Content Container (2/3) -->
   <div
-    class="flex w-full tablet:w-2/3 flex-col tablet:gap-y-3 tablet:px-4 tablet:py-8 desktop:p-16 tablet:border-r-border-primary pt-6"
+    class="flex w-full tablet:w-2/3 flex-col tablet:px-4 tablet:py-8 desktop:p-16 tablet:border-r-border-primary pt-6"
   >
     <!-- Logos Section -->
     <div
-      class="flex flex-row w-full items-center h-10.5 tablet:h-[64px] p-4 mb-12 tablet:py-4 desktop:py-8 desktop:pt-20 tablet:px-0 justify-between"
+      class="flex flex-row w-full items-center h-10.5 px-4 mb-[22px] desktop:py-8 desktop:pt-20 tablet:px-0 justify-between"
     >
       <div
-        class="w-40 tablet:w-44 tablet:pl-4 h-12 tablet:h-[64px] desktop-xl:h-16 desktop-xl:w-60 flex items-center justify-center text-text-muted text-sm"
+        class="w-40 tablet:w-44 tablet:pl-4 h-10.5 desktop-xl:h-16 desktop-xl:w-60 flex items-center justify-center text-text-muted text-sm"
       >
         <img
           src={asset("/images/openapi_con_logo.svg")}
           alt="OpenAPI Conference Logo"
-          class="w-40 tablet:w-[243px] h-12 tablet:h-[64px]"
+          class="w-40 tablet:w-[243px] h-10.5"
         />
       </div>
       <div
-        class="w-16 tablet:w-24 h-12 tablet:h-[64px] flex items-center justify-center text-text-muted text-sm"
+        class="w-16 tablet:w-24 h-10.5 flex items-center justify-center text-text-muted text-sm"
       >
         <a
           href="https://www.futureofsoftwaretechnologies.com/"
@@ -65,16 +65,16 @@
           <img
             src={asset("/images/img_hosted_by_fost.png")}
             alt="Hosted by Fost Logo"
-            class="w-16 tablet:w-24 h-3 tablet:h-[16px]"
+            class="w-16 h-3 tablet:h-[32px]"
           />
         </a>
       </div>
     </div>
 
     <!-- Title Section -->
-    <div class="flex flex-col px-4 pb-4 tablet:py-4 tablet:px-0 tablet:pt-10">
+    <div class="flex flex-col px-4 pb-4 tablet:px-0">
       <div
-        class="text-[clamp(32px,10vw+12px,55px)] mobile:text-[55px] h-[159px] tablet:text-[clamp(80px,5vw+32px,160px)] desktop:text-[clamp(6rem,5vw+32px,10rem)] font-bold leading-[1.05] tracking-tighter tablet:leading-[1.1] desktop:leading-[1.00] desktop-xl:leading-[1.00] wrap-break-word"
+        class="text-[clamp(32px,10vw+12px,55px)] mobile:text-[55px] h-[159px] tablet:h-auto tablet:text-[clamp(80px,5vw+32px,160px)] desktop:text-[clamp(6rem,5vw+32px,10rem)] font-bold leading-[1.05] tablet:leading-none tracking-tighter desktop:leading-none wrap-break-word"
       >
         <span class="text-primary block">OPENAPI</span>
         <span class="text-text-primary block">CONFERENCE</span>
@@ -84,18 +84,20 @@
 
     <!-- Decorative Line (tablet/desktop) -->
     <div
-      class="hidden tablet:block w-full h-px my-4 bg-primary-green-muted"
+      class="hidden tablet:block w-full h-px mt-3 mb-4 pb-px bg-primary-green-muted"
     ></div>
 
     <!-- Decorative Line (mobile) -->
-    <div class="tablet:hidden w-full h-px bg-primary-green-muted mt-6"></div>
+    <div
+      class="tablet:hidden w-full h-px bg-primary-green-muted mt-6 pb-px"
+    ></div>
 
     <!-- Subtitle with Date and Calendar -->
     <div
-      class="flex flex-row items-center justify-between gap-2 tablet:gap-spacing-lg border-0 tablet:border-0 rounded-lg tablet:rounded-none p-3 tablet:p-0 rounded-b-4xl h-16 bg-bg-dark tablet:bg-transparent relative z-10"
+      class="flex flex-row items-center justify-between gap-2 border-0 tablet:border-0 rounded-lg tablet:rounded-none p-3 tablet:p-0 rounded-b-4xl h-16 tablet:h-fit bg-bg-dark tablet:bg-transparent relative z-10"
     >
       <div
-        class="text-sm tablet:text-md tracking-widest desktop:text-xl desktop-xl:text-3xl font-bold text-text-primary uppercase"
+        class="text-sm tablet:text-[14px] tracking-widest desktop:text-xl desktop-xl:text-3xl font-bold text-text-primary uppercase"
       >
         11 December, 2025
       </div>
@@ -112,10 +114,10 @@
             showCalendarPopup = true;
           }
         }}
-        class="flex text-xs tablet:text-xs items-center gap-x-2 transition-colors duration-transition-fast uppercase text-text-muted hover:text-primary hover:cursor-pointer tracking-widest leading-tightest"
+        class="flex text-xs tablet:text-[11px] items-center gap-x-2 transition-colors duration-transition-fast uppercase text-text-muted hover:text-primary hover:cursor-pointer tracking-widest leading-tightest"
       >
         <span class="text-4xl -mt-1">+</span>
-        <span>Add to <br /> calendar</span>
+        <span>Add to <br class="block tablet:hidden" /> calendar</span>
       </a>
     </div>
 
@@ -159,51 +161,54 @@
     </a>
 
     <!-- Register Button -->
-    <div class="px-4 tablet:px-0">
-      <a
-        href="https://ticket.apidays.global/event/apidays-paris-2025/3cccd07f-acb2-466e-8d91-cb1f208ecf42/openapi-conference"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="group/btn bg-primary mt-4 tablet:mt-4 desktop-xl:mt-12 rounded-full flex font-bold tracking-wide px-4 tablet:px-spacing-2xl items-center justify-between h-18 tablet:h-20 desktop-xl:h-30 w-full active:bg-primary-green-dark text-text-on-green text-xl tablet:text-3xl desktop-xl:text-[42px] uppercase py-spacing-md transition-colors duration-transition-base pl-4 tablet:pl-10 shadow-md hover:shadow-lg cursor-pointer relative overflow-hidden"
-      >
-        <!-- Shimmer effect -->
-        <div
-          class="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1500 bg-[linear-gradient(120deg,transparent_35%,rgba(255,255,255,0.9)_50%,transparent_65%)]"
-        ></div>
-        <span class="relative z-10">GET A TICKET</span>
-        <div
-          class="w-12 h-12 tablet:w-16 tablet:h-16 desktop-xl:w-24 desktop-xl:h-24 -mr-1 bg-black rounded-full flex items-center justify-center shrink-0 ml-2 tablet:ml-4 relative z-10 transition-transform duration-500 group-hover/btn:scale-110 group-active/btn:scale-90"
-        >
-          <svg
-            class="w-6 h-6 tablet:w-5 tablet:h-5 desktop-xl:w-7 desktop-xl:h-7 text-primary ml-0.5 transition-transform duration-500 group-hover/btn:scale-[0.909] group-active/btn:scale-[1.111]"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path d="M8 5v14l11-7z" />
-          </svg>
-        </div>
-      </a>
-    </div>
-
-    <!-- Countdown Timer -->
     <div
-      class="flex text-xs text-text-muted font-medium tracking-widest uppercase px-4 pt-2 tablet:px-0 items-center justify-center tablet:justify-start w-full leading-5 tablet:text-md desktop:text-lg desktop-xl:text-lg"
+      class="tablet:flex tablet:flex-col tablet:h-full tablet:justify-end px-4 tablet:px-0"
     >
-      {days} Days
-      <img
-        src={asset("/images/big_tilde.svg")}
-        alt=""
-        class="inline h-2 mx-3"
-      />
-      {String(hours).padStart(2, "0")}:{String(minutes).padStart(
-        2,
-        "0"
-      )}:{String(seconds).padStart(2, "0")}
-    </div>
+      <div>
+        <a
+          href="https://ticket.apidays.global/event/apidays-paris-2025/3cccd07f-acb2-466e-8d91-cb1f208ecf42/openapi-conference"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group/btn bg-primary mt-4 tablet:mt-0 desktop-xl:mt-12 rounded-full flex font-bold tracking-wide px-4 items-center justify-between h-18 desktop-xl:h-30 w-full active:bg-primary-green-dark text-text-on-green text-xl tablet:text-3xl desktop-xl:text-[42px] uppercase py-spacing-md transition-colors duration-transition-base pl-4 tablet:pl-10 shadow-md hover:shadow-lg cursor-pointer relative overflow-hidden"
+        >
+          <!-- Shimmer effect -->
+          <div
+            class="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1500 bg-[linear-gradient(120deg,transparent_35%,rgba(255,255,255,0.9)_50%,transparent_65%)]"
+          ></div>
+          <span class="relative z-10">GET A TICKET</span>
+          <div
+            class="w-12 h-12 tablet:w-16 tablet:h-16 desktop-xl:w-24 desktop-xl:h-24 -mr-1 bg-black rounded-full flex items-center justify-center shrink-0 ml-2 tablet:ml-4 relative z-10 transition-transform duration-500 group-hover/btn:scale-110 group-active/btn:scale-90"
+          >
+            <svg
+              class="w-6 h-6 tablet:w-5 tablet:h-5 desktop-xl:w-7 desktop-xl:h-7 text-primary ml-0.5 transition-transform duration-500 group-hover/btn:scale-[0.909] group-active/btn:scale-[1.111]"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </div>
+        </a>
+      </div>
 
+      <!-- Countdown Timer -->
+      <div
+        class="flex text-[11px] text-text-muted font-medium tracking-widest uppercase px-4 pt-2 tablet:px-0 items-center justify-center tablet:justify-start w-full leading-5 tablet:text-md desktop:text-lg desktop-xl:text-lg"
+      >
+        {days} Days
+        <img
+          src={asset("/images/big_tilde.svg")}
+          alt=""
+          class="inline h-2 mx-3"
+        />
+        {String(hours).padStart(2, "0")}:{String(minutes).padStart(
+          2,
+          "0"
+        )}:{String(seconds).padStart(2, "0")}
+      </div>
+    </div>
     <!-- Bottom Content with Social Links -->
     <div
-      class="flex items-center justify-between mt-auto pt-spacing-xl h-11 tablet:pb-4 desktop-xl:pb-8 px-4 pt-4 tablet:px-0"
+      class="flex items-center justify-between pt-spacing-xl h-11 tablet:h-11 tablet:pb-11 desktop-xl:pb-8 px-4 pt-8 tablet:px-0"
     >
       <SocialIcons />
       <div>
@@ -238,7 +243,7 @@
 
       <!-- Location Content Overlay -->
       <div
-        class="absolute px-4 py-4 tablet:px-8 tablet:py-8 desktop-xl:px-16 desktop-xl:py-16 inset-0 flex flex-col justify-between"
+        class="absolute px-4 py-4 tablet:px-8 tablet:pb-16 tablet:py-8 desktop-xl:px-16 desktop-xl:py-16 inset-0 flex flex-col justify-between"
       >
         <!-- Location Pin Icon -->
         <div
@@ -256,12 +261,12 @@
         </div>
 
         <!-- Location Details at Bottom -->
-        <div class="flex flex-col gap-2 tablet:gap-4 desktop-xl:gap-6 shrink-0">
-          <h2
+        <div class="flex flex-col gap-2 tablet:gap-8 desktop-xl:gap-6 shrink-0">
+          <div
             class="text-xl tablet:text-2xl desktop-xl:text-3xl font-bold text-text-primary leading-tight tracking-widest transition-colors duration-300 group-hover/loc:text-primary"
           >
             CNIT FOREST, <br />PARIS
-          </h2>
+          </div>
           <div
             class="text-xs tablet:text-sm text-text-muted leading-tight tracking-widest transition-colors duration-300 group-hover/loc:text-white"
           >
