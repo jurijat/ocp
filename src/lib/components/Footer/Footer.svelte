@@ -3,7 +3,7 @@
 </script>
 
 <footer
-  class="p-4 tablet:p-8 desktop-xl:p-16 flex flex-col tablet:flex-row gap-6 tablet:gap-0 min-h-[210px] items-center bg-black"
+  class="p-4 tablet:p-8 desktop-xxl:p-16 flex flex-col tablet:flex-row gap-6 tablet:gap-0 min-h-[210px] items-center bg-black"
 >
   <!-- Mobile Layout -->
   <div class="tablet:hidden flex flex-col items-center gap-6 w-full">
@@ -88,7 +88,7 @@
           href="https://github.com/OAI/.github/blob/main/.github/CODE_OF_CONDUCT.md"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm font-medium transition-colors tracking-widest uppercase flex items-center gap-2"
+          class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm font-light transition-colors tracking-widest uppercase flex items-center gap-2"
         >
           Code of Conduct
           <svg

@@ -126,7 +126,7 @@
           >
             <div
               class="three-item-1"
-              style="--width-desktop-xl: {widths.width1};"
+              style="--width-desktop-xxl: {widths.width1};"
             >
               <AgendaItemCard
                 item={section.items[0]}
@@ -135,7 +135,7 @@
             </div>
             <div
               class="three-item-2"
-              style="--width-desktop-xl: {widths.width2};"
+              style="--width-desktop-xxl: {widths.width2};"
             >
               <AgendaItemCard
                 item={section.items[1]}
@@ -144,7 +144,7 @@
             </div>
             <div
               class="three-item-3"
-              style="--width-desktop-xl: {widths.width3};"
+              style="--width-desktop-xxl: {widths.width3};"
             >
               <AgendaItemCard
                 item={section.items[2]}
@@ -168,7 +168,7 @@
                 >
                   <div
                     class="pair-item-1"
-                    style="--width-desktop-xl: {widths.width1};"
+                    style="--width-desktop-xxl: {widths.width1};"
                   >
                     <AgendaItemCard
                       item={pair[0]}
@@ -177,7 +177,7 @@
                   </div>
                   <div
                     class="pair-item-2"
-                    style="--width-desktop-xl: {widths.width2};"
+                    style="--width-desktop-xxl: {widths.width2};"
                   >
                     <AgendaItemCard
                       item={pair[1]}

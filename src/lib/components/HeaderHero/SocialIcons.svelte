@@ -1,4 +1,4 @@
-<div class="flex items-center gap-6 w-28 h-11">
+<div class="flex items-center gap-6 desktop:gap-10 w-28 h-11">
   <!-- LinkedIn Icon -->
   <a
     href="https://www.linkedin.com/company/open-api-initiative/"

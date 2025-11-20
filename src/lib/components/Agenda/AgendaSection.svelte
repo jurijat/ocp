@@ -11,7 +11,7 @@
   class:border-t={activeBorder}
 >
   <div
-    class="text-3xl tablet:text-4xl desktop-xl:text-6xl font-bold text-text-primary uppercase tracking-wide"
+    class="text-3xl tablet:text-4xl desktop-xxl:text-6xl font-bold text-text-primary uppercase tracking-wide"
   >
     {title}
   </div>

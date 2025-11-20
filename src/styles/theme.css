@@ -129,6 +129,7 @@
   --breakpoint-tablet: 60rem; /* 960px */
   --breakpoint-desktop: 73.75rem; /* 1180px */
   --breakpoint-desktop-xl: 108rem; /* 1728px */
+  --breakpoint-desktop-xxl: 152rem; /* 2440px */
 
   /* Tailwind defaults */
   --breakpoint-sm: 640px;

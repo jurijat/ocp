@@ -35,27 +35,27 @@
 </script>
 
 <header
-  class="flex flex-col tablet:flex-row h-[667px] tablet:min-h-0 tablet:h-[clamp(640px,50vw+160px,900px)] text-text-primary overflow-hidden desktop:h-[clamp(900px,50vw+320px,1117px)] desktop-xl:h-[clamp(1118px,50vw+320px,1280px)]"
+  class="flex flex-col tablet:flex-row h-[667px] tablet:min-h-0 tablet:h-[clamp(640px,50vw+160px,900px)] text-text-primary overflow-hidden desktop:h-[clamp(900px,50vw+160px,1117px)] desktop-xl:h-[clamp(1118px,50vw+160px,1280px)]"
 >
   <!-- Left Content Container (2/3) -->
   <div
-    class="flex w-full tablet:w-2/3 flex-col tablet:px-4 tablet:py-8 desktop:p-16 tablet:border-r-border-primary pt-6"
+    class="flex w-full tablet:w-2/3 flex-col tablet:px-4 tablet:py-8 desktop:p-16 desktop-xxl:p-24 tablet:border-r-border-primary pt-6"
   >
     <!-- Logos Section -->
     <div
-      class="flex flex-row w-full items-center h-10.5 px-4 mb-[22px] desktop:py-8 desktop:pt-20 tablet:px-0 justify-between"
+      class="flex flex-row w-full items-center h-10.5 px-4 mb-[22px] desktop:mb-[91.5px] desktop-xxl:mb-[43px] desktop:h-16 tablet:px-0 justify-between"
     >
       <div
-        class="w-40 tablet:w-44 tablet:pl-4 h-10.5 desktop-xl:h-16 desktop-xl:w-60 flex items-center justify-center text-text-muted text-sm"
+        class="w-40 tablet:w-44 tablet:pl-4 desktop:pl-0 h-10.5 desktop:h-16 desktop:w-[243px] desktop-xxl:h-18 desktop-xxl:w-[273px] flex items-center justify-center text-text-muted text-sm"
       >
         <img
           src={asset("/images/openapi_con_logo.svg")}
           alt="OpenAPI Conference Logo"
-          class="w-40 tablet:w-[243px] h-10.5"
+          class="w-40 tablet:w-[243px] desktop-xxl:w-[273px] desktop-xxl:h-[72px] h-10.5"
         />
       </div>
       <div
-        class="w-16 tablet:w-24 h-10.5 flex items-center justify-center text-text-muted text-sm"
+        class="w-16 tablet:w-24 h-10.5 desktop-xxl:w-[119px] desktop-xxl:h-[62px] flex items-center justify-center text-text-muted text-sm"
       >
         <a
           href="https://www.futureofsoftwaretechnologies.com/"
@@ -65,16 +65,16 @@
           <img
             src={asset("/images/img_hosted_by_fost.png")}
             alt="Hosted by Fost Logo"
-            class="w-16 h-3 tablet:h-[32px]"
+            class="w-16 h-3 tablet:h-[32px] desktop:w-[97px] desktop:h-[52px] desktop-xxl:w-[119px] desktop-xxl:h-[62px]"
           />
         </a>
       </div>
     </div>
 
     <!-- Title Section -->
-    <div class="flex flex-col px-4 pb-4 tablet:px-0">
+    <div class="flex flex-col px-4 pb-4 desktop:pb-0 tablet:px-0">
       <div
-        class="text-[clamp(32px,10vw+12px,55px)] mobile:text-[55px] h-[159px] tablet:h-auto tablet:text-[clamp(80px,5vw+32px,160px)] desktop:text-[clamp(6rem,5vw+32px,10rem)] font-bold leading-[1.05] tablet:leading-none tracking-tighter desktop:leading-none wrap-break-word"
+        class="text-[clamp(32px,10vw+12px,55px)] mobile:text-[55px] h-[159px] tablet:h-auto tablet:text-[clamp(80px,5vw+32px,160px)] desktop:text-[clamp(6rem,5vw+32px,10rem)] font-bold leading-[1.05] tablet:leading-none tracking-tighter desktop-xl:text-[clamp(8rem,5vw+32px,10rem)] desktop-xl:leading-[clamp(114px,5vw+10px,180px)] desktop-xxl:leading-[160px] wrap-break-word"
       >
         <span class="text-primary block">OPENAPI</span>
         <span class="text-text-primary block">CONFERENCE</span>
@@ -84,7 +84,7 @@
 
     <!-- Decorative Line (tablet/desktop) -->
     <div
-      class="hidden tablet:block w-full h-px mt-3 mb-4 pb-px bg-primary-green-muted"
+      class="hidden tablet:block z-10 w-full h-px tablet:mt-4 tablet:mb-6 desktop:mt-10 desktop:mb-12 pb-px bg-primary-green-muted"
     ></div>
 
     <!-- Decorative Line (mobile) -->
@@ -97,7 +97,7 @@
       class="flex flex-row items-center justify-between gap-2 border-0 tablet:border-0 rounded-lg tablet:rounded-none p-3 tablet:p-0 rounded-b-4xl h-16 tablet:h-fit bg-bg-dark tablet:bg-transparent relative z-10"
     >
       <div
-        class="text-sm tablet:text-[14px] tracking-widest desktop:text-xl desktop-xl:text-3xl font-bold text-text-primary uppercase"
+        class="text-sm tablet:text-[14px] tracking-widest desktop-xl:text-xl desktop-xxl:text-3xl font-bold text-text-primary uppercase"
       >
         11 December, 2025
       </div>
@@ -114,7 +114,7 @@
             showCalendarPopup = true;
           }
         }}
-        class="flex text-xs tablet:text-[11px] items-center gap-x-2 transition-colors duration-transition-fast uppercase text-text-muted hover:text-primary hover:cursor-pointer tracking-widest leading-tightest"
+        class="flex text-xs tablet:text-[11px] desktop-xl:text-[13px] items-center gap-x-2 transition-colors duration-transition-fast uppercase text-text-muted hover:text-primary hover:cursor-pointer tracking-widest leading-tightest"
       >
         <span class="text-4xl -mt-1">+</span>
         <span>Add to <br class="block tablet:hidden" /> calendar</span>
@@ -162,14 +162,14 @@
 
     <!-- Register Button -->
     <div
-      class="tablet:flex tablet:flex-col tablet:h-full tablet:justify-end px-4 tablet:px-0"
+      class="tablet:flex tablet:flex-col tablet:h-full tablet:justify-end desktop:justify-center px-4 tablet:px-0"
     >
       <div>
         <a
           href="https://ticket.apidays.global/event/apidays-paris-2025/3cccd07f-acb2-466e-8d91-cb1f208ecf42/openapi-conference"
           target="_blank"
           rel="noopener noreferrer"
-          class="group/btn bg-primary mt-4 tablet:mt-0 desktop-xl:mt-12 rounded-full flex font-bold tracking-wide px-4 items-center justify-between h-18 desktop-xl:h-30 w-full active:bg-primary-green-dark text-text-on-green text-xl tablet:text-3xl desktop-xl:text-[42px] uppercase py-spacing-md transition-colors duration-transition-base pl-4 tablet:pl-10 shadow-md hover:shadow-lg cursor-pointer relative overflow-hidden"
+          class="group/btn bg-primary mt-4 tablet:mt-0 desktop-xxl:mt-12 rounded-full flex font-bold tracking-wide px-4 items-center justify-between h-18 desktop-xl:h-30 w-full active:bg-primary-green-dark text-text-on-green text-xl tablet:text-3xl desktop-xxl:text-[42px] uppercase py-spacing-md transition-colors duration-transition-base pl-4 tablet:pl-10 shadow-md hover:shadow-lg cursor-pointer relative overflow-hidden"
         >
           <!-- Shimmer effect -->
           <div
@@ -192,7 +192,7 @@
 
       <!-- Countdown Timer -->
       <div
-        class="flex text-[11px] text-text-muted font-medium tracking-widest uppercase px-4 pt-2 tablet:px-0 items-center justify-center tablet:justify-start w-full leading-5 tablet:text-md desktop:text-lg desktop-xl:text-lg"
+        class="flex text-[11px] text-text-muted font-medium tracking-widest uppercase px-4 pt-2 tablet:px-0 items-center justify-center tablet:justify-start w-full leading-5 tablet:text-md desktop-xxl:text-lg"
       >
         {days} Days
         <img
@@ -208,13 +208,13 @@
     </div>
     <!-- Bottom Content with Social Links -->
     <div
-      class="flex items-center justify-between pt-spacing-xl h-11 tablet:h-11 tablet:pb-11 desktop-xl:pb-8 px-4 pt-8 tablet:px-0"
+      class="flex items-center justify-between pt-spacing-xl h-11 tablet:h-11 tablet:pb-11 desktop-xxl:pb-8 px-4 pt-8 tablet:px-0"
     >
       <SocialIcons />
       <div>
         <a
           href="https://openapis.org"
-          class="text-text-secondary hover:text-primary active:text-primary-green-dark text-[11px] desktop:text-base font-medium transition-colors duration-transition-fast tracking-widest"
+          class="text-text-secondary hover:text-primary active:text-primary-green-dark text-[11px] desktop-xl:text-[13px] font-light transition-colors duration-transition-fast tracking-widest"
         >
           OPENAPIS.ORG
         </a>
@@ -243,14 +243,14 @@
 
       <!-- Location Content Overlay -->
       <div
-        class="absolute px-4 py-4 tablet:px-8 tablet:pb-16 tablet:py-8 desktop-xl:px-16 desktop-xl:py-16 inset-0 flex flex-col justify-between"
+        class="absolute px-4 py-4 tablet:px-8 tablet:pb-16 tablet:py-8 desktop-xxl:px-16 desktop-xxl:py-16 inset-0 flex flex-col justify-between"
       >
         <!-- Location Pin Icon -->
         <div
-          class="shrink-0 bg-black rounded-full flex items-center w-12 h-12 tablet:w-16 tablet:h-16 desktop-xl:w-24 desktop-xl:h-24 justify-center transition-colors duration-300 group-hover/loc:bg-primary"
+          class="shrink-0 bg-black rounded-full flex items-center w-12 h-12 tablet:w-16 tablet:h-16 desktop-xxl:w-24 desktop-xxl:h-24 justify-center transition-colors duration-300 group-hover/loc:bg-primary"
         >
           <svg
-            class="w-6 h-6 tablet:w-10 tablet:h-10 desktop-xl:w-14 desktop-xl:h-14 text-primary transition-colors duration-300 group-hover/loc:text-black"
+            class="w-6 h-6 tablet:w-10 tablet:h-10 desktop-xxl:w-14 desktop-xxl:h-14 text-primary transition-colors duration-300 group-hover/loc:text-black"
             viewBox="0 0 24 24"
             fill="currentColor"
           >
@@ -261,9 +261,11 @@
         </div>
 
         <!-- Location Details at Bottom -->
-        <div class="flex flex-col gap-2 tablet:gap-8 desktop-xl:gap-6 shrink-0">
+        <div
+          class="flex flex-col gap-2 tablet:gap-8 desktop-xxl:gap-6 shrink-0"
+        >
           <div
-            class="text-xl tablet:text-2xl desktop-xl:text-3xl font-bold text-text-primary leading-tight tracking-widest transition-colors duration-300 group-hover/loc:text-primary"
+            class="text-xl tablet:text-2xl desktop-xxl:text-3xl font-bold text-text-primary leading-tight tracking-widest transition-colors duration-300 group-hover/loc:text-primary"
           >
             CNIT FOREST, <br />PARIS
           </div>

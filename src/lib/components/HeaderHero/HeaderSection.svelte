@@ -13,14 +13,14 @@
 </script>
 
 <section
-  class="p-4 desktop:p-16 flex flex-row flex-nowrap py-8 tablet:py-12 tablet:h-32 desktop-xl:h-64 items-center bg-black"
+  class="p-4 desktop:p-16 desktop-xxl:px-24 flex flex-row flex-nowrap py-8 tablet:py-12 tablet:h-32 desktop-xl:h-64 desktop-xxl:h-[352px] items-center bg-black"
 >
   <!-- Left Content Container -->
   <div class="flex w-full tablet:w-9/10 flex-col gap-x-10">
     <!-- Section Title -->
     <div class="flex flex-col gap-y-4">
       <h1
-        class="text-4xl tablet:text-5xl tablet:pt-4 desktop-xl:text-9xl uppercase font-bold text-white tracking-tighter"
+        class="text-4xl tablet:text-5xl tablet:pt-4 desktop-xl:pt-0 desktop-xl:text-[128px] desktop-xl:leading-[128px] desktop-xxl:text-[180px] desktop-xxl:leading-[160px] uppercase font-bold text-white tracking-tighter"
       >
         {title}
       </h1>
@@ -42,7 +42,7 @@
       {:else if iconType === "plus"}
         <!-- Plus Icon -->
         <svg
-          class="w-5 h-5 tablet:w-5 tablet:h-5 desktop-xl:w-7 desktop-xl:h-7 text-primary-green-muted"
+          class="w-5 h-5 tablet:w-5 tablet:h-5 desktop-xxl:w-7 desktop-xxl:h-7 text-primary-green-muted"
           viewBox="0 0 24 24"
           fill="currentColor"
         >

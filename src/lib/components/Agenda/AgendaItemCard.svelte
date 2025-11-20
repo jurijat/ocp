@@ -38,7 +38,7 @@
   <!-- Time and Category -->
   <div class="flex items-center justify-between mb-2">
     <div
-      class="text-xs tablet:text-[13px] text-white tablet:text-white desktop:text-xl uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
+      class="text-xs tablet:text-[13px] text-white tablet:text-white desktop-xxl:text-[16px] uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
     >
       {item.time}
       {#if item.category}
@@ -50,19 +50,11 @@
         >
       {/if}
     </div>
-    {#if item.badge}
-      <div
-        class:tablet:hidden={item.badge?.toLowerCase() === "invite only"}
-        class="tablet:block text-xs text-text-muted desktop:text-xl uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
-      >
-        {item.badge}
-      </div>
-    {/if}
   </div>
 
   <!-- Title -->
   <div
-    class="text-2xl desktop-xl:text-5xl font-bold text-primary uppercase tracking-tight leading-tight mb-8 tablet:mb-8 grow group-hover:text-text-on-green transition-colors duration-transition-base desktop:text-[clamp(32px,2vw+16px,48px)]"
+    class="text-2xl desktop-xxl:text-5xl font-bold text-primary uppercase tracking-tight leading-tight mb-8 tablet:mb-8 grow group-hover:text-text-on-green transition-colors duration-transition-base desktop:text-[clamp(32px,2vw+16px,48px)]"
   >
     {item.title}
   </div>
@@ -75,7 +67,7 @@
         <div class="flex items-center">
           <div class="flex items-center -space-x-6">
             <div
-              class="w-12 h-12 tablet:w-12 tablet:h-12 desktop-xl:w-12 desktop-xl:h-12 rounded-full overflow-hidden shrink-0 z-10"
+              class="w-12 h-12 tablet:w-12 tablet:h-12 desktop-xxl:w-12 desktop-xxl:h-12 rounded-full overflow-hidden shrink-0 z-10"
             >
               {#if item.speakers[0].avatar}
                 <img
@@ -88,7 +80,7 @@
               {/if}
             </div>
             <div
-              class="w-12 h-12 tablet:w-12 tablet:h-12 desktop-xl:w-12 desktop-xl:h-12 rounded-full overflow-hidden shrink-0 transition-all duration-300 group-hover:opacity-0 group-hover:-translate-x-full"
+              class="w-12 h-12 tablet:w-12 tablet:h-12 desktop-xxl:w-12 desktop-xxl:h-12 rounded-full overflow-hidden shrink-0 transition-all duration-300 group-hover:opacity-0 group-hover:-translate-x-full"
             >
               {#if item.speakers[1].avatar}
                 <img
@@ -122,7 +114,7 @@
       {:else if item.badge}
         <!-- Badge shown at bottom left on mobile -->
         <div
-          class="desktop:hidden text-xs text-text-muted desktop:text-xl uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
+          class="text-xs flex items-center text-text-muted desktop:text-xl uppercase desktop-xl:-ml-6 desktop-xl:-mb-6 desktop-xl:h-20 tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
         >
           {item.badge}
         </div>

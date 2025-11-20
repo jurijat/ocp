@@ -36,20 +36,20 @@
     {href}
     target="_blank"
     rel="noopener noreferrer"
-    class="group p-4 tablet:p-4 desktop:p-8 desktop:px-16 flex flex-col tablet:flex-row h-[181px] tablet:h-[104px] desktop:h-[210px] desktop-xl:h-[280px] items-center justify-center tablet:justify-between rounded-4xl tablet:rounded-none {bgClass} hover:bg-primary active:bg-primary-green-dark transition-colors duration-200 cursor-pointer block"
+    class="group p-4 tablet:p-4 desktop:p-8 desktop:px-16 desktop-xxl:px-24 flex flex-col tablet:flex-row h-[181px] tablet:h-[104px] desktop:h-[210px] desktop-xxl:h-[280px] items-center justify-center tablet:justify-between rounded-4xl tablet:rounded-none {bgClass} hover:bg-primary active:bg-primary-green-dark transition-colors duration-200 cursor-pointer block"
   >
     <!-- Title and Subtitle -->
     <div
       class="flex flex-col gap-y-1 tablet:gap-y-1 text-center tablet:text-left"
     >
       <div
-        class="text-2xl desktop:text-[44px] desktop-xl:text-7xl uppercase font-bold {textColor} tracking-wide transition-colors duration-300 group-hover:text-text-on-green"
+        class="text-2xl desktop:text-[44px] desktop-xxl:text-7xl uppercase font-bold {textColor} tracking-wide transition-colors duration-300 group-hover:text-text-on-green"
       >
         {title}
       </div>
       {#if subtitle}
         <span
-          class="text-sm tablet:text-md desktop:text-xl desktop-xl:text-2xl tracking-widest {subtitleColor} uppercase font-bold transition-colors duration-300 group-hover:text-text-on-green"
+          class="text-sm tablet:text-md desktop:text-xl desktop-xxl:text-2xl tracking-widest {subtitleColor} uppercase font-bold transition-colors duration-300 group-hover:text-text-on-green"
         >
           {subtitle}
         </span>
@@ -65,7 +65,7 @@
         <img
           src={imageUrl}
           alt={imageAlt}
-          class="h-[33px] w-[100px] tablet:h-14 tablet:w-30 desktop:h-24 desktop:w-50 desktop-xl:w-70"
+          class="h-[33px] w-[100px] tablet:h-14 tablet:w-30 desktop:h-24 desktop:w-50 desktop-xxl:w-70"
         />
       {:else if iconType}
         <!-- Icon Display -->
