@@ -29,7 +29,7 @@
 </script>
 
 <div
-  class="bg-black border-b md:border-0 md:border-b py-8 px-4 tablet:p-4 tablet:py-8 desktop:p-16 desktop-xxl:p-24 flex flex-col justify-between h-full transition-colors duration-transition-base {disableHover
+  class="bg-black border-b md:border-0 md:border-b py-8 px-4 tablet:p-4 tablet:py-8 desktop:p-16 desktop-xxl:p-24 flex flex-col justify-between h-full transition-colors duration-200 ease-in-out {disableHover
     ? ''
     : 'hover:bg-primary group'} {isLastInRow
     ? ''
@@ -38,13 +38,16 @@
   <!-- Time and Category -->
   <div class="flex items-center justify-between mb-2">
     <div
-      class="text-xs tablet:text-[13px] text-white tablet:text-white desktop-xxl:text-[16px] uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
+      class="text-xs tablet:text-[13px] text-white tablet:text-white desktop-xxl:text-[16px] uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out"
     >
       {item.time}
       {#if item.category}
-        <span class="mx-3 text-text-muted">/</span>
         <span
-          class="text-primary group-hover:text-text-on-green font-medium"
+          class="mx-3 text-text-muted transition-colors duration-200 ease-in-out group-hover:text-text-on-green"
+          >/</span
+        >
+        <span
+          class="text-primary group-hover:text-text-on-green font-medium transition-colors duration-200 ease-in-out"
           class:text-primary={item.category?.toLowerCase() === "foundations"}
           >{item.category}</span
         >
@@ -54,7 +57,7 @@
 
   <!-- Title -->
   <div
-    class="text-2xl desktop-xxl:text-5xl font-bold text-primary uppercase tracking-tight leading-tight mb-8 tablet:mb-8 grow group-hover:text-text-on-green transition-colors duration-transition-base desktop:text-[clamp(32px,2vw+16px,48px)]"
+    class="text-2xl desktop-xxl:text-5xl font-bold text-primary uppercase tracking-tight leading-tight mb-8 tablet:mb-8 grow group-hover:text-text-on-green transition-colors duration-200 ease-in-out desktop:text-[clamp(32px,2vw+16px,48px)]"
   >
     {item.title}
   </div>
@@ -96,12 +99,12 @@
           <!-- Names stacked -->
           <div class="flex flex-col gap-0.5 ml-3 leading-sm">
             <div
-              class="text-sm tablet:text-[16px] desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
+              class="text-sm tablet:text-[16px] desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out"
             >
               {item.speakers[0].name}
             </div>
             <div
-              class="text-sm tablet:text-[16px] desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
+              class="text-sm tablet:text-[16px] desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out"
             >
               {item.speakers[1].name}
             </div>
@@ -114,7 +117,7 @@
       {:else if item.badge}
         <!-- Badge shown at bottom left on mobile -->
         <div
-          class="text-xs flex items-center text-text-muted desktop:text-xl uppercase desktop-xl:-ml-6 desktop-xl:-mb-6 desktop-xxl:-ml-12 desktop-xxl:-mb-12 desktop-xl:h-20 tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
+          class="text-xs flex items-center text-text-muted desktop:text-xl uppercase desktop-xl:-ml-6 desktop-xl:-mb-6 desktop-xxl:-ml-12 desktop-xxl:-mb-12 desktop-xl:h-20 tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out"
         >
           {item.badge}
         </div>

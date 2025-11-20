@@ -40,12 +40,12 @@
   <div class="flex flex-col gap-0.5 desktop:gap-2 tablet:gap-0">
     <div
       class="text-[16px] desktop:text-xl desktop-xxl:text-[28px] leading-none py-1 tablet:py-0
-       font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
+       font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out"
     >
       {speaker.name}
     </div>
     <div
-      class="text-[13px] desktop:text-[13px] desktop-xxl:text-[16px] text-text-muted uppercase group-hover:text-text-on-green tracking-widest transition-colors duration-transition-base"
+      class="text-[13px] desktop:text-[13px] desktop-xxl:text-[16px] text-text-muted uppercase group-hover:text-text-on-green tracking-widest transition-colors duration-200 ease-in-out"
     >
       {speaker.company}
     </div>
