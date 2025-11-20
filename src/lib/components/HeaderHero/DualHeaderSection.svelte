@@ -36,7 +36,16 @@
     {href}
     target="_blank"
     rel="noopener noreferrer"
-    class="group p-4 tablet:p-4 desktop:p-8 desktop:px-16 desktop-xxl:px-24 flex flex-col tablet:flex-row h-[181px] tablet:h-[104px] desktop:h-[210px] desktop-xxl:h-[280px] items-center justify-center tablet:justify-between rounded-4xl tablet:rounded-none {bgClass} hover:bg-primary active:bg-primary-green-dark transition-colors duration-200 ease-in-out cursor-pointer block"
+    class="group {bgClass} p-4 tablet:p-4 desktop:p-8 desktop:px-16 desktop-xxl:px-24 flex flex-col tablet:flex-row h-[181px] tablet:h-[104px] desktop:h-[210px] desktop-xxl:h-[280px] items-center justify-center tablet:justify-between rounded-4xl tablet:rounded-none cursor-pointer"
+    style="transition: background-color 200ms ease-in-out;"
+    onmouseenter={(e) =>
+      (e.currentTarget.style.backgroundColor = "var(--color-primary)")}
+    onmouseleave={(e) => (e.currentTarget.style.backgroundColor = "")}
+    onmousedown={(e) =>
+      (e.currentTarget.style.backgroundColor =
+        "var(--color-primary-green-dark)")}
+    onmouseup={(e) =>
+      (e.currentTarget.style.backgroundColor = "var(--color-primary)")}
   >
     <!-- Title and Subtitle -->
     <div
@@ -86,6 +95,7 @@
             <img
               class="w-4 h-4 tablet:w-5 tablet:h-5 text-primary font-black"
               src={asset("/images/plus.svg")}
+              alt="Plus icon"
             />
           {/if}
         </div>

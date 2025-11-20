@@ -155,6 +155,50 @@
               />
             </div>
           </div>
+          <!-- Remaining items from first section as pairs -->
+          {#if section.items.length > 3}
+            <div class="flex flex-col gap-spacing-lg mt-spacing-lg">
+              {#each chunkIntoPairs<AgendaItem>(section.items.slice(3)) as pair}
+                {#if pair.length === 2}
+                  {@const widths = calculateBlockPercents(
+                    pair[0].title,
+                    pair[1].title
+                  )}
+                  <div
+                    class="flex flex-col md:flex-row gap-spacing-lg w-full h-auto tablet:h-[252px] desktop:h-[490px] pair-container"
+                  >
+                    <div
+                      class="pair-item-1"
+                      style="--width-desktop-xxl: {widths.width1};"
+                    >
+                      <AgendaItemCard
+                        item={pair[0]}
+                        disableHover={pair[0].disableHover}
+                      />
+                    </div>
+                    <div
+                      class="pair-item-2"
+                      style="--width-desktop-xxl: {widths.width2};"
+                    >
+                      <AgendaItemCard
+                        item={pair[1]}
+                        isLastInRow={true}
+                        disableHover={pair[1].disableHover}
+                      />
+                    </div>
+                  </div>
+                {:else}
+                  <div class="w-full">
+                    <AgendaItemCard
+                      item={pair[0]}
+                      isLastInRow={true}
+                      disableHover={pair[0].disableHover}
+                    />
+                  </div>
+                {/if}
+              {/each}
+            </div>
+          {/if}
         {:else}
           <!-- Other sections: pairs layout -->
           <div class="flex flex-col gap-spacing-lg">
