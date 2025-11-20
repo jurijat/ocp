@@ -29,28 +29,31 @@
 </script>
 
 <div
-  class="bg-black border-b tablet:border-0 tablet:border-b py-8 px-4 tablet:p-4 desktop:p-16 flex flex-col justify-between h-full transition-colors duration-transition-base {disableHover
+  class="bg-black border-b md:border-0 md:border-b py-8 px-4 tablet:p-4 tablet:py-8 desktop:p-16 flex flex-col justify-between h-full transition-colors duration-transition-base {disableHover
     ? ''
     : 'hover:bg-primary group'} {isLastInRow
     ? ''
-    : 'tablet:border-r'} border-border-primary"
+    : 'md:border-r'} border-border-primary"
 >
   <!-- Time and Category -->
   <div class="flex items-center justify-between mb-2">
     <div
-      class="text-xs text-white tablet:text-text-muted desktop:text-xl uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
+      class="text-xs tablet:text-[13px] text-white tablet:text-white desktop:text-xl uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
     >
       {item.time}
       {#if item.category}
         <span class="mx-3 text-text-muted">/</span>
-        <span class="text-primary group-hover:text-text-on-green font-medium"
+        <span
+          class="text-primary group-hover:text-text-on-green font-medium"
+          class:text-primary={item.category?.toLowerCase() === "foundations"}
           >{item.category}</span
         >
       {/if}
     </div>
     {#if item.badge}
       <div
-        class="hidden tablet:block text-xs text-text-muted desktop:text-xl uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
+        class:tablet:hidden={item.badge?.toLowerCase() === "invite only"}
+        class="tablet:block text-xs text-text-muted desktop:text-xl uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
       >
         {item.badge}
       </div>
@@ -101,12 +104,12 @@
           <!-- Names stacked -->
           <div class="flex flex-col gap-0.5 ml-3 leading-sm">
             <div
-              class="text-sm tablet:text-lg desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
+              class="text-sm tablet:text-[16px] desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
             >
               {item.speakers[0].name}
             </div>
             <div
-              class="text-sm tablet:text-lg desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
+              class="text-sm tablet:text-[16px] desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
             >
               {item.speakers[1].name}
             </div>
@@ -119,7 +122,7 @@
       {:else if item.badge}
         <!-- Badge shown at bottom left on mobile -->
         <div
-          class="tablet:hidden text-xs text-text-muted desktop:text-xl uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
+          class="desktop:hidden text-xs text-text-muted desktop:text-xl uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
         >
           {item.badge}
         </div>

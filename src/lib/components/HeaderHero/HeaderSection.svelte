@@ -27,8 +27,7 @@
     </div>
   </div>
   <div class="flex w-2/10 tablet:w-1/10 items-center justify-end">
-    <a
-      {href}
+    <div
       class="w-10 h-10 tablet:w-16 tablet:h-16 desktop-xl:w-24 desktop-xl:h-24 bg-black rounded-full flex items-center justify-center border border-primary-green-muted hover:border-primary-dark transition-colors duration-200"
     >
       {#if iconType === "arrow-down"}
@@ -50,6 +49,6 @@
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
         </svg>
       {/if}
-    </a>
+    </div>
   </div>
 </section>

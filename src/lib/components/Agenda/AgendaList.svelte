@@ -107,7 +107,11 @@
     {#each sections as section, sectionIndex (section.id)}
       <div class="flex flex-col">
         <!-- Section Header -->
-        <AgendaSection title={section.title} timeRange={section.timeRange} />
+        <AgendaSection
+          title={section.title}
+          timeRange={section.timeRange}
+          activeBorder={sectionIndex === 0}
+        />
 
         <!-- Agenda Items with Dynamic Widths -->
         {#if sectionIndex === 0 && section.items.length >= 3}
