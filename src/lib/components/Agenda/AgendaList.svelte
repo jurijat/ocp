@@ -219,7 +219,7 @@
     .three-item-1,
     .three-item-2,
     .three-item-3 {
-      width: var(--width-desktop);
+      width: var(--width-desktop-xxl);
     }
   }
 </style>

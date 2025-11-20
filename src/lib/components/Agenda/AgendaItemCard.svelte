@@ -114,7 +114,7 @@
       {:else if item.badge}
         <!-- Badge shown at bottom left on mobile -->
         <div
-          class="text-xs flex items-center text-text-muted desktop:text-xl uppercase desktop-xl:-ml-12 desktop-xl:-mb-12 desktop-xl:h-20 tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
+          class="text-xs flex items-center text-text-muted desktop:text-xl uppercase desktop-xl:-ml-6 desktop-xl:-mb-6 desktop-xxl:-ml-12 desktop-xxl:-mb-12 desktop-xl:h-20 tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
         >
           {item.badge}
         </div>
