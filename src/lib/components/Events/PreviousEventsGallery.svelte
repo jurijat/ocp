@@ -51,23 +51,28 @@
     class="border border-primary-green-muted rounded-4xl tablet:rounded-none overflow-hidden relative"
   >
     <!-- Mobile Slider -->
-    <div class="tablet:hidden bg-black">
+    <div class="tablet:hidden bg-black relative h-[590px]">
       <!-- Slider Container -->
       <div
         bind:this={sliderRef}
         onscroll={handleScroll}
-        class="flex h-[590px] overflow-x-scroll items-center"
-        style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; touch-action: pan-x pan-y;"
+        class="flex h-full overflow-x-scroll scrollbar-hide snap-x snap-mandatory"
+        style="-webkit-overflow-scrolling: touch; touch-action: pan-x pan-y;"
       >
         {#each allImages as image}
-          <div class="w-full shrink-0 snap-start h-[330px] px-2.5">
+          <div class="w-full shrink-0 snap-center h-full">
             <div
-              class="w-full h-full pt-[40px]"
+              class="w-full h-full"
               style="background-image: url('{image.url}'); background-size: cover; background-position: center;"
             ></div>
           </div>
         {/each}
       </div>
+
+      <!-- Gradient Overlay -->
+      <div
+        class="absolute bottom-0 left-0 w-full h-16 bg-linear-to-t from-black/80 to-transparent backdrop-blur-[2px] z-10 pointer-events-none"
+      ></div>
 
       <!-- Navigation Dots -->
       <div
