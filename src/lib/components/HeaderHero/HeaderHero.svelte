@@ -74,7 +74,7 @@
     <!-- Title Section -->
     <div class="flex flex-col px-4 pb-4 desktop:pb-0 tablet:px-0">
       <div
-        class="text-[clamp(32px,10vw+12px,55px)] mobile:text-[55px] h-[159px] tablet:h-auto tablet:text-[clamp(80px,5vw+32px,160px)] desktop:text-[clamp(6rem,5vw+32px,10rem)] font-bold leading-[1.05] tablet:leading-none tracking-tighter desktop-xl:text-[clamp(8rem,5vw+32px,10rem)] desktop-xl:leading-[clamp(114px,5vw+10px,180px)] desktop-xxl:leading-[160px] wrap-break-word"
+        class="text-[clamp(32px,10vw+12px,55px)] mobile:text-[55px] h-[159px] tablet:h-auto tablet:text-[clamp(80px,5vw+32px,160px)] desktop:text-[clamp(6rem,5vw+32px,8rem)] font-bold leading-[1.05] tablet:leading-none tracking-tighter desktop-xl:text-[clamp(8rem,5vw+24px,11rem)] desktop-xl:leading-[clamp(8rem,5vw+24px,11rem)] desktop-xxl:leading-[10rem] desktop-xxl:text-[180px] wrap-break-word"
       >
         <span class="text-primary block">OPENAPI</span>
         <span class="text-text-primary block">CONFERENCE</span>
@@ -97,7 +97,7 @@
       class="flex flex-row items-center justify-between gap-2 border-0 tablet:border-0 rounded-lg tablet:rounded-none p-3 tablet:p-0 rounded-b-4xl h-16 tablet:h-fit bg-bg-dark tablet:bg-transparent relative z-10"
     >
       <div
-        class="text-sm tablet:text-[14px] tracking-widest desktop-xl:text-xl desktop-xxl:text-3xl font-bold text-text-primary uppercase"
+        class="text-sm tablet:text-[14px] tracking-widest desktop-xl:text-xl desktop-xxl:text-[28px] font-bold text-text-primary uppercase"
       >
         11 December, 2025
       </div>
@@ -137,11 +137,11 @@
       <!-- Content -->
       <div class="absolute inset-0 flex items-center justify-between px-4 pt-4">
         <div class="flex flex-col">
-          <span class="text-[24px] font-bold text-text-primary tracking-wide"
+          <span class="text-2xl font-bold text-text-primary tracking-wide"
             >CNIT FOREST, PARIS</span
           >
           <span class="text-sm text-white tracking-widest font-normal"
-            >2 PL. DE LA DEFENSE, 92092 PUTEAUX</span
+            >2 PL. DE LA DEFENSE, 92092 PUTEAUX, FRANCE</span
           >
         </div>
         <div
@@ -192,7 +192,7 @@
 
       <!-- Countdown Timer -->
       <div
-        class="flex text-[11px] text-text-muted font-medium tracking-widest uppercase px-4 pt-2 tablet:px-0 items-center justify-center tablet:justify-start w-full leading-5 tablet:text-md desktop-xxl:text-lg"
+        class="flex text-[11px] text-text-muted font-medium tracking-widest uppercase px-4 pt-2 tablet:px-0 items-center justify-center tablet:justify-start w-full leading-5 tablet:text-md desktop-xxl:text-[16px]"
       >
         {days} Days
         <img
@@ -230,20 +230,22 @@
     class="group/loc hidden tablet:flex flex-col w-full tablet:w-1/3 min-h-[300px] tablet:min-h-0 border-0 tablet:border-l tablet:border-l-border-primary bg-bg-dark-elevated overflow-hidden relative cursor-pointer"
   >
     <!-- Background Image -->
-    <div
-      class="w-full h-full relative bg-cover bg-center"
-      style="background-image: url({asset(
-        '/images/background/background_top_right.jpg'
-      )})"
-    >
+    <div class="w-full h-full relative">
       <!-- Dark Overlay -->
       <div
-        class="absolute inset-0 bg-[#00000052] transition-colors duration-300 group-hover/loc:bg-[#00000080] group-active/loc:bg-[#000000a0]"
+        class="absolute z-10 inset-0 transition-colors duration-300 group-hover/loc:bg-[#00000080] group-active/loc:bg-[#000000a0]"
+      ></div>
+
+      <div
+        class="w-full h-full absolute bg-cover bg-center bg-pan-slow"
+        style="background-image: url({asset(
+          '/images/background/background_top_right.jpg'
+        )})"
       ></div>
 
       <!-- Location Content Overlay -->
       <div
-        class="absolute px-4 py-4 tablet:px-8 tablet:pb-16 tablet:py-8 desktop-xl:p-16 inset-0 flex flex-col justify-between"
+        class="z-20 absolute px-4 py-4 tablet:px-8 tablet:pb-16 tablet:py-8 desktop-xl:p-16 desktop-xxl:p-24 inset-0 flex flex-col justify-between"
       >
         <!-- Location Pin Icon -->
         <div
@@ -265,12 +267,12 @@
           class="flex flex-col gap-2 tablet:gap-8 desktop-xxl:gap-6 shrink-0"
         >
           <div
-            class="text-xl tablet:text-2xl desktop-xl:text-[44px] desktop-xxl:text-3xl font-bold text-text-primary leading-tight tracking-widest transition-colors duration-300 group-hover/loc:text-primary"
+            class="text-xl tablet:text-2xl desktop-xl:text-[44px] desktop-xxl:text-[44px] font-bold text-text-primary leading-[1.10] tracking-wide transition-colors duration-300 group-hover/loc:text-primary"
           >
             CNIT FOREST, <br />PARIS
           </div>
           <div
-            class="text-xs tablet:text-sm text-text-muted leading-tight tracking-widest desktop-xl:text-[13px] desktop-xl:leading-[20px] transition-colors duration-300 group-hover/loc:text-white"
+            class="text-xs tablet:text-sm text-text-muted leading-tight tracking-[0.2em] desktop-xl:text-[13px] desktop-xl:leading-[20px] transition-colors duration-300 group-hover/loc:text-white"
           >
             2 PL. DE LA DEFENSE,<br />92092 PUTEAUX,<br />FRANCE
           </div>
@@ -285,3 +287,39 @@
   isOpen={showCalendarPopup}
   onClose={() => (showCalendarPopup = false)}
 />
+
+<style>
+  @keyframes bg-pan-transform {
+    0% {
+      transform: scale(1.15) translateX(-4%);
+    }
+    100% {
+      transform: scale(1.15) translateX(4%);
+    }
+  }
+
+  .bg-pan-slow {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bg-pan-slow::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: bg-pan-transform 35s ease-in-out infinite alternate;
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    z-index: 0;
+  }
+
+  .bg-pan-slow > * {
+    position: relative;
+    z-index: 1;
+  }
+</style>

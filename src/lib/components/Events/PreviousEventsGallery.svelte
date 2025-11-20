@@ -51,7 +51,7 @@
     class="border border-primary-green-muted rounded-4xl tablet:rounded-none overflow-hidden"
   >
     <!-- Mobile Slider -->
-    <div class="tablet:hidden bg-black pt-12">
+    <div class="tablet:hidden bg-black">
       <!-- Slider Container -->
       <div
         bind:this={sliderRef}
@@ -60,23 +60,25 @@
         style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; touch-action: pan-x;"
       >
         {#each allImages as image}
-          <div class="w-full h-full shrink-0 snap-start flex items-center">
-            <img src={image.url} alt={image.alt} class="w-full h-full object-cover" />
+          <div class="w-full shrink-0 snap-start">
+            <div class="w-full h-full py-[30px] px-[10px]">
+              <img src={image.url} alt={image.alt} class="w-full h-full object-cover" />
+            </div>
           </div>
         {/each}
       </div>
 
       <!-- Navigation Dots -->
-      <div class="flex justify-center items-center gap-3 pt-12 pb-2">
-        {#each [0, 1, 2, 3, 4] as dotIndex}
+      <div class="flex justify-center items-center gap-3 pt-2 pb-2">
+        {#each allImages as image, index}
           <button
             type="button"
-            onclick={() => goToSlide(dotIndex * 2)}
-            class="w-3 h-3 rounded-full transition-colors duration-200"
-            style="background-color: {Math.floor(currentSlide / 2) === dotIndex
+            onclick={() => goToSlide(index)}
+            class="w-2 h-2 rounded-full transition-colors duration-200"
+            style="background-color: {currentSlide === index
               ? '#47c552'
               : '#4d7051'};"
-            aria-label="Go to slide {dotIndex + 1}"
+            aria-label="Go to slide {index + 1}"
           ></button>
         {/each}
       </div>

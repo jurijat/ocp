@@ -38,7 +38,7 @@
       href="https://github.com/OAI/.github/blob/main/.github/CODE_OF_CONDUCT.md"
       target="_blank"
       rel="noopener noreferrer"
-      class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm font-normal transition-colors tracking-widest uppercase flex items-center gap-2"
+      class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm font-normal transition-colors tracking-widest uppercase flex items-center gap-2 pb-12"
     >
       Code of Conduct
       <svg
