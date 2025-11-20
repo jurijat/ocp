@@ -196,20 +196,12 @@
   ];
 </script>
 
-<svelte:head>
-  <title>OpenAPI Conference - Paris 2025</title>
-  <meta
-    name="description"
-    content="Join us at the OpenAPI Conference in Paris. Exclusive masterclasses by API masters on December 11th."
-  />
-</svelte:head>
-
 <div class="flex items-center justify-center min-h-screen w-full mx-auto">
   <div class="max-w-[2440px] w-full">
     <HeaderHero />
     <DualHeaderSection
       title="Want to learn more?"
-      subtitle="Checkout Masterclasses by API Masters on December 10th"
+      subtitle="Checkout Masterclasses by API Masters on December 11th"
       imageUrl={asset("/images/api_masters.png")}
       imageAlt="API Masters Logo"
       href="https://apimasters.fr/our-masterclasses/entry/353/"
