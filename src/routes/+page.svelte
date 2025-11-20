@@ -214,11 +214,11 @@
       imageAlt="API Masters Logo"
       href="https://apimasters.fr/our-masterclasses/entry/353/"
     />
-    <HeaderSection title="AGENDA" href="#agenda" />
+    <HeaderSection title="AGENDA" />
     <div id="agenda">
       <AgendaList sections={section} />
     </div>
-    <HeaderSection title="PREVIOUS EVENTS" href="#previous-events" />
+    <HeaderSection title="PREVIOUS EVENTS" />
     <div id="previous-events">
       <PreviousEventsGallery />
     </div>

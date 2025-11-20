@@ -7,7 +7,12 @@ const config = {
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			// Disable precompression for cleaner output
+			precompress: false,
+			// Strict mode for better error handling
+			strict: true
+		}),
 		paths: {
 			base: process.env.NODE_ENV === 'production' ? '/ocp' : ''
 		}

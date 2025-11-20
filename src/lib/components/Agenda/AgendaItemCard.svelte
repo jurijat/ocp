@@ -29,21 +29,23 @@
 </script>
 
 <div
-  class="bg-black border tablet:border-0 tablet:border-b p-4 tablet:p-4 desktop:p-16 flex flex-col justify-between h-full transition-colors duration-transition-base {disableHover
+  class="bg-black border-b tablet:border-0 tablet:border-b py-8 px-4 tablet:p-4 desktop:p-16 flex flex-col justify-between h-full transition-colors duration-transition-base {disableHover
     ? ''
     : 'hover:bg-primary group'} {isLastInRow
     ? ''
     : 'tablet:border-r'} border-border-primary"
 >
   <!-- Time and Category -->
-  <div class="flex items-center justify-between mb-6">
+  <div class="flex items-center justify-between mb-2">
     <div
       class="text-xs text-white tablet:text-text-muted desktop:text-xl uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
     >
       {item.time}
       {#if item.category}
-        <span class="mx-2">/</span>
-        <span>{item.category}</span>
+        <span class="mx-3 text-text-muted">/</span>
+        <span class="text-primary group-hover:text-text-on-green font-medium"
+          >{item.category}</span
+        >
       {/if}
     </div>
     {#if item.badge}
@@ -57,7 +59,7 @@
 
   <!-- Title -->
   <div
-    class="text-2xl desktop-xl:text-5xl font-bold text-primary uppercase tracking-tight leading-tight mb-4 tablet:mb-8 grow group-hover:text-text-on-green transition-colors duration-transition-base desktop:text-[clamp(32px,2vw+16px,48px)]"
+    class="text-2xl desktop-xl:text-5xl font-bold text-primary uppercase tracking-tight leading-tight mb-8 tablet:mb-8 grow group-hover:text-text-on-green transition-colors duration-transition-base desktop:text-[clamp(32px,2vw+16px,48px)]"
   >
     {item.title}
   </div>
@@ -70,7 +72,7 @@
         <div class="flex items-center">
           <div class="flex items-center -space-x-6">
             <div
-              class="w-12 h-12 tablet:w-12 tablet:h-12 desktop-xl:w-12 desktop-xl:h-12 rounded-full overflow-hidden shrink-0 z-10 border-2 border-black"
+              class="w-12 h-12 tablet:w-12 tablet:h-12 desktop-xl:w-12 desktop-xl:h-12 rounded-full overflow-hidden shrink-0 z-10"
             >
               {#if item.speakers[0].avatar}
                 <img
@@ -83,7 +85,7 @@
               {/if}
             </div>
             <div
-              class="w-12 h-12 tablet:w-12 tablet:h-12 desktop-xl:w-12 desktop-xl:h-12 rounded-full overflow-hidden shrink-0 border-2 border-black transition-all duration-300 group-hover:opacity-0 group-hover:-translate-x-full"
+              class="w-12 h-12 tablet:w-12 tablet:h-12 desktop-xl:w-12 desktop-xl:h-12 rounded-full overflow-hidden shrink-0 transition-all duration-300 group-hover:opacity-0 group-hover:-translate-x-full"
             >
               {#if item.speakers[1].avatar}
                 <img
@@ -97,7 +99,7 @@
             </div>
           </div>
           <!-- Names stacked -->
-          <div class="flex flex-col gap-0.5 ml-3">
+          <div class="flex flex-col gap-0.5 ml-3 leading-sm">
             <div
               class="text-sm tablet:text-lg desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-transition-base"
             >

@@ -105,7 +105,7 @@
 <section class="bg-bg-dark text-text-primary">
   <div class="flex flex-col gap-spacing-3xl">
     {#each sections as section, sectionIndex (section.id)}
-      <div class="flex flex-col gap-spacing-lg">
+      <div class="flex flex-col">
         <!-- Section Header -->
         <AgendaSection title={section.title} timeRange={section.timeRange} />
 
@@ -118,7 +118,7 @@
             section.items[2].title
           )}
           <div
-            class="flex flex-col md:flex-row gap-spacing-lg w-full h-auto tablet:h-[252px] desktop:h-[490px]"
+            class="flex flex-col md:flex-row w-full h-auto tablet:h-[252px] desktop:h-[490px]"
           >
             <div
               class="three-item-1"

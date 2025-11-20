@@ -8,11 +8,13 @@
   <!-- Mobile Layout -->
   <div class="tablet:hidden flex flex-col items-center gap-6 w-full">
     <!-- 1. Text -->
-    <p class="text-sm text-text-secondary tracking-wide text-center">
+    <p
+      class="text-[18px] tracking-normal text-center text-text-primary opacity-[0.64]"
+    >
       For any questions about the OAI Track, please contact
       <a
         href="mailto:oai-track@openapis.org"
-        class="text-text-primary hover:text-primary active:text-primary-green-dark transition-colors"
+        class="opacity-[0.48] hover:text-primary active:text-primary-green-dark transition-colors"
       >
         oai-track@openapis.org
       </a>
@@ -26,7 +28,7 @@
       href="https://openapis.org"
       target="_blank"
       rel="noopener noreferrer"
-      class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm font-medium transition-colors tracking-widest uppercase"
+      class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm font-normal transition-colors tracking-widest uppercase"
     >
       OPENAPIS.ORG
     </a>
@@ -36,7 +38,7 @@
       href="https://github.com/OAI/.github/blob/main/.github/CODE_OF_CONDUCT.md"
       target="_blank"
       rel="noopener noreferrer"
-      class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm font-medium transition-colors tracking-widest uppercase flex items-center gap-2"
+      class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm font-normal transition-colors tracking-widest uppercase flex items-center gap-2"
     >
       Code of Conduct
       <svg
@@ -76,7 +78,7 @@
           href="https://openapis.org"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm font-medium transition-colors tracking-widest uppercase"
+          class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm font-light transition-colors tracking-widest uppercase"
         >
           OPENAPIS.ORG
         </a>

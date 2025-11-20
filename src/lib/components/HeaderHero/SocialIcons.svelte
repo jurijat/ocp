@@ -1,8 +1,8 @@
-<div class="flex items-center mobile:gap-4 gap-10">
+<div class="flex items-center gap-6 w-28 h-11">
   <!-- LinkedIn Icon -->
   <a
     href="https://www.linkedin.com/company/open-api-initiative/"
-    class="w-10 h-10 flex items-center justify-center cursor-pointer group transition-transform duration-300 hover:scale-110"
+    class="w-11 h-11 flex items-center justify-center cursor-pointer group transition-transform duration-300 hover:scale-110"
     aria-label="LinkedIn"
   >
     <svg
@@ -11,7 +11,6 @@
       viewBox="0 0 44 44"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      class="w-24 h-[16px]"
     >
       <g clip-path="url(#clip0_693_1541)">
         <path
@@ -24,8 +23,8 @@
       <defs>
         <clipPath id="clip0_693_1541">
           <rect
-            width="32"
-            height="32"
+            width="44"
+            height="44"
             fill="white"
             transform="translate(6 6)"
           />
@@ -37,7 +36,7 @@
   <!-- YouTube Icon -->
   <a
     href="https://www.youtube.com/@OpenApi"
-    class="w-10 h-10 flex items-center justify-center cursor-pointer group transition-transform duration-300 hover:scale-110"
+    class="w-11 h-11 flex items-center justify-center cursor-pointer group transition-transform duration-300 hover:scale-110"
     aria-label="YouTube"
   >
     <svg
@@ -46,7 +45,6 @@
       viewBox="0 0 44 44"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      class="w-24 h-[16px]"
     >
       <path
         d="M41.1643 12.3723C40.7044 10.6512 39.3491 9.29594 37.628 8.83594C34.5083 8 22 8 22 8C22 8 9.49164 8 6.37195 8.83594C4.65117 9.29594 3.29562 10.6512 2.8357 12.3723C2 15.4916 2 22.0002 2 22.0002C2 22.0002 2 28.5087 2.8357 31.6277C3.29562 33.3488 4.65117 34.7045 6.37195 35.1644C9.49164 36 22 36 22 36C22 36 34.5083 36 37.628 35.1644C39.3491 34.7045 40.7044 33.3488 41.1643 31.6277C41.9999 28.5087 41.9999 22.0002 41.9999 22.0002C41.9999 22.0002 41.9999 15.4916 41.1643 12.3723ZM17.9998 28.0003V16.0001L28.3919 22.0002L17.9998 28.0003Z"

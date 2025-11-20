@@ -39,11 +39,11 @@
 >
   <!-- Left Content Container (2/3) -->
   <div
-    class="flex w-full tablet:w-2/3 flex-col gap-y-6 tablet:gap-y-3 tablet:px-4 tablet:py-8 desktop:p-16 tablet:border-r-border-primary pt-6"
+    class="flex w-full tablet:w-2/3 flex-col tablet:gap-y-3 tablet:px-4 tablet:py-8 desktop:p-16 tablet:border-r-border-primary pt-6"
   >
     <!-- Logos Section -->
     <div
-      class="flex flex-row w-full items-center h-12 tablet:h-[64px] p-4 tablet:py-4 desktop:py-8 desktop:pt-20 tablet:px-0 justify-between"
+      class="flex flex-row w-full items-center h-10.5 tablet:h-[64px] p-4 mb-12 tablet:py-4 desktop:py-8 desktop:pt-20 tablet:px-0 justify-between"
     >
       <div
         class="w-40 tablet:w-44 tablet:pl-4 h-12 tablet:h-[64px] desktop-xl:h-16 desktop-xl:w-60 flex items-center justify-center text-text-muted text-sm"
@@ -72,9 +72,9 @@
     </div>
 
     <!-- Title Section -->
-    <div class="flex flex-col p-4 tablet:py-4 tablet:px-0 pt-2 tablet:pt-10">
+    <div class="flex flex-col px-4 pb-4 tablet:py-4 tablet:px-0 tablet:pt-10">
       <div
-        class="text-[clamp(40px,5vw+32px,80px)] tablet:text-[clamp(80px,5vw+32px,160px)] desktop:text-[clamp(6rem,5vw+32px,10rem)] font-bold tracking-tighter leading-[0.92] tablet:leading-[1.1] desktop:leading-[1.00] desktop-xl:leading-[1.00] wrap-break-word"
+        class="text-[clamp(32px,10vw+12px,55px)] mobile:text-[55px] h-[159px] tablet:text-[clamp(80px,5vw+32px,160px)] desktop:text-[clamp(6rem,5vw+32px,10rem)] font-bold leading-[1.05] tracking-tighter tablet:leading-[1.1] desktop:leading-[1.00] desktop-xl:leading-[1.00] wrap-break-word"
       >
         <span class="text-primary block">OPENAPI</span>
         <span class="text-text-primary block">CONFERENCE</span>
@@ -88,9 +88,7 @@
     ></div>
 
     <!-- Decorative Line (mobile) -->
-    <div
-      class="tablet:hidden w-full h-px bg-primary-green-muted mt-0 -mb-6"
-    ></div>
+    <div class="tablet:hidden w-full h-px bg-primary-green-muted mt-6"></div>
 
     <!-- Subtitle with Date and Calendar -->
     <div
@@ -114,9 +112,10 @@
             showCalendarPopup = true;
           }
         }}
-        class="text-xs tablet:text-xs transition-colors duration-transition-fast uppercase text-text-muted hover:text-primary hover:cursor-pointer tracking-widest leading-tightest"
+        class="flex text-xs tablet:text-xs items-center gap-x-2 transition-colors duration-transition-fast uppercase text-text-muted hover:text-primary hover:cursor-pointer tracking-widest leading-tightest"
       >
-        + Add to calendar
+        <span class="text-4xl -mt-1">+</span>
+        <span>Add to <br /> calendar</span>
       </a>
     </div>
 
@@ -125,7 +124,7 @@
       href="https://maps.google.com/?q=CNIT+Forest,+2+Pl.+de+la+Defense,+92092+Puteaux,+France"
       target="_blank"
       rel="noopener noreferrer"
-      class="tablet:hidden p-4 relative h-[152px] -mt-12 rounded-b-4xl overflow-hidden bg-cover bg-center block cursor-pointer"
+      class="tablet:hidden p-4 relative h-[152px] -mt-6 rounded-b-4xl overflow-hidden bg-fill bg-no-repeat bg-center block cursor-pointer"
       style="background-image: url({asset(
         '/images/background/background_top_right.jpg'
       )})"
@@ -136,10 +135,10 @@
       <!-- Content -->
       <div class="absolute inset-0 flex items-center justify-between px-4 pt-4">
         <div class="flex flex-col">
-          <span class="text-xl font-bold text-text-primary tracking-widest"
+          <span class="text-[24px] font-bold text-text-primary tracking-wide"
             >CNIT FOREST, PARIS</span
           >
-          <span class="text-sm text-white tracking-widest"
+          <span class="text-sm text-white tracking-widest font-normal"
             >2 PL. DE LA DEFENSE, 92092 PUTEAUX</span
           >
         </div>
@@ -165,7 +164,7 @@
         href="https://ticket.apidays.global/event/apidays-paris-2025/3cccd07f-acb2-466e-8d91-cb1f208ecf42/openapi-conference"
         target="_blank"
         rel="noopener noreferrer"
-        class="group/btn bg-primary mt-4 tablet:mt-4 desktop-xl:mt-12 rounded-full flex font-bold tracking-wide px-4 tablet:px-spacing-2xl items-center justify-between h-16 tablet:h-20 desktop-xl:h-30 w-full active:bg-primary-green-dark text-text-on-green text-xl tablet:text-3xl desktop-xl:text-[42px] uppercase py-spacing-md transition-colors duration-transition-base pl-4 tablet:pl-10 shadow-md hover:shadow-lg cursor-pointer relative overflow-hidden"
+        class="group/btn bg-primary mt-4 tablet:mt-4 desktop-xl:mt-12 rounded-full flex font-bold tracking-wide px-4 tablet:px-spacing-2xl items-center justify-between h-18 tablet:h-20 desktop-xl:h-30 w-full active:bg-primary-green-dark text-text-on-green text-xl tablet:text-3xl desktop-xl:text-[42px] uppercase py-spacing-md transition-colors duration-transition-base pl-4 tablet:pl-10 shadow-md hover:shadow-lg cursor-pointer relative overflow-hidden"
       >
         <!-- Shimmer effect -->
         <div
@@ -188,7 +187,7 @@
 
     <!-- Countdown Timer -->
     <div
-      class="flex text-xs text-text-muted font-medium tracking-widest uppercase px-4 tablet:px-0 items-center justify-center tablet:justify-start w-full tablet:text-md desktop:text-lg desktop-xl:text-lg"
+      class="flex text-xs text-text-muted font-medium tracking-widest uppercase px-4 pt-2 tablet:px-0 items-center justify-center tablet:justify-start w-full leading-5 tablet:text-md desktop:text-lg desktop-xl:text-lg"
     >
       {days} Days
       <img
@@ -204,13 +203,13 @@
 
     <!-- Bottom Content with Social Links -->
     <div
-      class="flex items-center justify-between mt-auto pt-spacing-xl tablet:pb-4 desktop-xl:pb-8 px-4 tablet:px-0"
+      class="flex items-center justify-between mt-auto pt-spacing-xl h-11 tablet:pb-4 desktop-xl:pb-8 px-4 pt-4 tablet:px-0"
     >
       <SocialIcons />
       <div>
         <a
           href="https://openapis.org"
-          class="text-text-secondary hover:text-primary active:text-primary-green-dark text-sm desktop:text-base font-medium transition-colors duration-transition-fast tracking-widest"
+          class="text-text-secondary hover:text-primary active:text-primary-green-dark text-[11px] desktop:text-base font-medium transition-colors duration-transition-fast tracking-widest"
         >
           OPENAPIS.ORG
         </a>
