@@ -36,8 +36,9 @@
     title2: string,
     bonus: number = 1.15
   ): { width1: string; width2: string } {
-    const length1 = title1.length;
-    const length2 = title2.length;
+    // Treat "TBD" as if it were longer to give it more width
+    const length1 = title1 === "TBD" ? 20 : title1.length;
+    const length2 = title2 === "TBD" ? 20 : title2.length;
 
     // Compute the "weight" of each title using the square root
     let weight1 = Math.sqrt(length1);
@@ -64,9 +65,10 @@
     title3: string,
     bonus: number = 1.15
   ): { width1: string; width2: string; width3: string } {
-    const length1 = title1.length;
-    const length2 = title2.length;
-    const length3 = title3.length;
+    // Treat "TBD" as if it were longer to give it more width
+    const length1 = title1 === "TBD" ? 20 : title1.length;
+    const length2 = title2 === "TBD" ? 20 : title2.length;
+    const length3 = title3 === "TBD" ? 20 : title3.length;
 
     // Compute the "weight" of each title using the square root
     let weight1 = Math.sqrt(length1);

@@ -15,7 +15,7 @@
       items: [
         {
           id: "breakfast",
-          time: "09:30",
+          time: "08:30",
           category: "",
           title: "EXECUTIVE BREAKFAST",
           badge: "INVITE ONLY",
