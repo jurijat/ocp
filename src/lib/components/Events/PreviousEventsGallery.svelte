@@ -89,7 +89,7 @@
           {#each row as image}
             <div
               class="w-1/4 aspect-4/3 overflow-hidden bg-center bg-no-repeat bg-cover"
-              style="background-image: url('{asset(image.url)}')"
+              style="background-image: url('{image.url}')"
             ></div>
           {/each}
         </div>
