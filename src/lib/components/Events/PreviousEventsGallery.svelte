@@ -57,7 +57,7 @@
         bind:this={sliderRef}
         onscroll={handleScroll}
         class="flex h-[590px] overflow-x-scroll items-center"
-        style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; touch-action: pan-x;"
+        style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; touch-action: pan-x pan-y;"
       >
         {#each allImages as image}
           <div class="w-full shrink-0 snap-start h-[330px] px-2.5">
