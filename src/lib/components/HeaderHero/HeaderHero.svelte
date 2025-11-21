@@ -49,7 +49,7 @@
         class="w-40 tablet:w-44 tablet:pl-4 desktop:pl-0 h-10.5 desktop:h-16 desktop:w-[243px] desktop-xxl:h-18 desktop-xxl:w-[273px] flex items-center justify-center text-text-muted text-sm"
       >
         <img
-          src={asset("/images/openapi_con_logo.svg")}
+          src={asset("/images/openapi_initiative_logo.svg")}
           alt="OpenAPI Conference Logo"
           class="w-40 tablet:w-[243px] desktop-xxl:w-[273px] desktop-xxl:h-[72px] h-10.5"
         />
