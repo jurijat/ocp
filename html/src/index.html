@@ -37,6 +37,19 @@
     <!-- Favicon -->
     <link rel="icon" href="./images/favicons/favicon.png" />
 
+    <!-- Prevent FOUC: Hide content until CSS loads -->
+    <style>
+      body {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.1s ease-in;
+      }
+      body.css-loaded {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+
     <!-- Preconnect to external domains -->
     <link
       rel="preconnect"
@@ -50,6 +63,11 @@
     <meta name="theme-color" content="#47c552" />
   </head>
   <body class="bg-bg-dark text-text-primary antialiased">
+    <!-- Immediately show content once JS executes -->
+    <script>
+      document.body.classList.add('css-loaded');
+    </script>
+
     <!-- Main Container -->
     <div
       id="app"
@@ -369,7 +387,7 @@
 
         <!-- Footer -->
         <footer
-          class="p-4 pt-12 tablet:p-8 desktop-xl:p-16 desktop-xxl:px-24 flex flex-col tablet:flex-row gap-6 tablet:gap-0 min-h-[210px] items-center bg-black"
+          class="p-4 pt-12 tablet:p-8 desktop:p-16 desktop-xxl:px-24 flex flex-col tablet:flex-row gap-6 tablet:gap-0 min-h-[210px] items-center bg-black"
         >
           <!-- Mobile Layout -->
           <div class="tablet:hidden flex flex-col items-center gap-6 w-full">
