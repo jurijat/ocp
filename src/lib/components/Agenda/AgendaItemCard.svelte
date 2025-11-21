@@ -4,7 +4,9 @@
   interface Speaker {
     name: string;
     company: string;
+    job?: string;
     avatar?: string;
+    linkedin?: string;
   }
 
   interface AgendaItem {
@@ -98,16 +100,38 @@
           </div>
           <!-- Names stacked -->
           <div class="flex flex-col gap-0.5 ml-3 leading-sm">
-            <div
-              class="text-sm tablet:text-[16px] desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out"
-            >
-              {item.speakers[0].name}
-            </div>
-            <div
-              class="text-sm tablet:text-[16px] desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out"
-            >
-              {item.speakers[1].name}
-            </div>
+            {#if item.speakers[0].linkedin}
+              <a
+                href={item.speakers[0].linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-sm tablet:text-[16px] desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out cursor-pointer hover:opacity-90"
+              >
+                {item.speakers[0].name}
+              </a>
+            {:else}
+              <div
+                class="text-sm tablet:text-[16px] desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out"
+              >
+                {item.speakers[0].name}
+              </div>
+            {/if}
+            {#if item.speakers[1].linkedin}
+              <a
+                href={item.speakers[1].linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-sm tablet:text-[16px] desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out cursor-pointer hover:opacity-90"
+              >
+                {item.speakers[1].name}
+              </a>
+            {:else}
+              <div
+                class="text-sm tablet:text-[16px] desktop:text-xl font-bold text-text-primary uppercase tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out"
+              >
+                {item.speakers[1].name}
+              </div>
+            {/if}
           </div>
         </div>
       {:else if item.speakers && item.speakers.length > 0}
@@ -117,7 +141,7 @@
       {:else if item.badge}
         <!-- Badge shown at bottom left on mobile -->
         <div
-          class="text-xs flex items-center text-text-muted desktop:text-xl uppercase desktop-xl:-ml-6 desktop-xl:-mb-6 desktop-xxl:-ml-12 desktop-xxl:-mb-12 desktop-xl:h-20 tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out"
+          class="text-xs flex items-center text-text-muted desktop:text-[13px] desktop-xxl:text-[16px] font-normal uppercase desktop-xl:-ml-6 desktop-xl:-mb-6 desktop-xxl:-ml-12 desktop-xxl:-mb-12 desktop-xl:h-20 tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out"
         >
           {item.badge}
         </div>

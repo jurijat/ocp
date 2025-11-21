@@ -5,7 +5,9 @@
   interface Speaker {
     name: string;
     company: string;
+    job?: string;
     avatar?: string;
+    linkedin?: string;
   }
 
   interface AgendaItem {

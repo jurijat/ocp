@@ -27,12 +27,14 @@
           id: "1",
           time: "09:15",
           category: "FOUNDATIONS",
-          title: "WHAT'S NEW IN OPENAPI 3.2",
+          title: "CONFERENCE WELCOME AND OPENAPI IN THE AGE OF AI",
           speakers: [
             {
-              name: "LORNA MITCHELL",
-              company: "TM FORUM",
-              avatar: asset("/images/speakers/Lorna.jpg"),
+              name: "ERIK WILDE",
+              job: "HEAD OF ENTERPRISE STRATEGY",
+              company: "JENTIC",
+              avatar: asset("/images/speakers/Erik.jpg"),
+              linkedin: "https://www.linkedin.com/in/erikwilde/",
             },
           ],
         },
@@ -40,12 +42,14 @@
           id: "2",
           time: "09:45",
           category: "FOUNDATIONS",
-          title: "YOU MAY HAVE OPENAPI, BUT IS IT AI-READY?",
+          title: "WHAT'S NEW IN OPENAPI 3.2",
           speakers: [
             {
-              name: "FRANK KILCOMMINS",
-              company: "JENTIC",
-              avatar: asset("/images/speakers/Frank.jpg"),
+              name: "LORNA MITCHELL",
+              job: "API ARCHITECT",
+              company: "TM FORUM",
+              avatar: asset("/images/speakers/Lorna.jpg"),
+              linkedin: "https://www.linkedin.com/in/lornajane/",
             },
           ],
         },
@@ -56,9 +60,11 @@
           title: "DATA CONTRACTS: TREATING DATA AS APIS",
           speakers: [
             {
-              name: "SIMON HARRER",
+              name: "DR. SIMON HARRER",
+              job: "CO-FOUNDER AND CEO",
               company: "ENTROPY DATA",
               avatar: asset("/images/speakers/Simon.jpg"),
+              linkedin: "https://www.linkedin.com/in/simonharrer/",
             },
           ],
         },
@@ -78,8 +84,10 @@
           speakers: [
             {
               name: "MARJUKKA NIINIOJA",
+              job: "FOUNDING PARTNER",
               company: "OSAANGO",
               avatar: asset("/images/speakers/Marjukka.jpg"),
+              linkedin: "https://www.linkedin.com/in/marjukkaniinioja/",
             },
           ],
         },
@@ -94,6 +102,7 @@
               name: "DIMITRI VAN HEES",
               company: "GOVERNMENT OF THE NETHERLANDS",
               avatar: asset("/images/speakers/Dimitri.jpg"),
+              linkedin: "https://www.linkedin.com/in/dimitrivanhees/",
             },
           ],
         },
@@ -106,8 +115,10 @@
           speakers: [
             {
               name: "NARESH JAIN",
+              job: "FOUNDER, CEO",
               company: "SPECMATIC",
               avatar: asset("/images/speakers/Naresh.jpg"),
+              linkedin: "https://www.linkedin.com/in/nareshjain/",
             },
           ],
         },
@@ -118,9 +129,11 @@
           title: "OPENAPI AND SPRING-BOOT 4 - WHAT'S NEW?",
           speakers: [
             {
-              name: "BADR NASS LAHSEN",
+              name: "BADR NASSLAHSEN",
+              job: "LEAD CLOUD AND SECURITY ARCHITECT",
               company: "CYBERARK",
               avatar: asset("/images/speakers/Badr.jpg"),
+              linkedin: "https://www.linkedin.com/in/nasslahsen/",
             },
           ],
         },
@@ -135,8 +148,16 @@
           id: "8",
           time: "14:00",
           category: "APPLICATIONS",
-          title: "TBD",
-          speakers: [],
+          title: "WHAT'S ALL THE FUSS ABOUT TYPESPEC?",
+          speakers: [
+            {
+              name: "CHRIS WOOD",
+              job: "PRINCIPAL ARCHITECT",
+              company: "OZONE API",
+              avatar: asset("/images/speakers/Chris.jpg"),
+              linkedin: "https://www.linkedin.com/in/sensiblewood/",
+            },
+          ],
         },
         {
           id: "9",
@@ -146,8 +167,10 @@
           speakers: [
             {
               name: "DAN CIRULI",
+              job: "VICE PRESIDENT AND GENERAL MANAGER, CLOUD NATIVE",
               company: "NUTANIX",
               avatar: asset("/images/speakers/Dan.jpg"),
+              linkedin: "https://www.linkedin.com/in/danciruli/",
             },
           ],
         },
@@ -159,8 +182,10 @@
           speakers: [
             {
               name: "RAHUL DÉ",
+              job: "VP, PLATFORM AND SITE RELIABILITY ENGINEERING, PUBLIC CLOUD",
               company: "CITI",
               avatar: asset("/images/speakers/Rahul.jpg"),
+              linkedin: "https://www.linkedin.com/in/lispyclouds",
             },
           ],
         },
@@ -175,8 +200,16 @@
           id: "11",
           time: "15:55",
           category: "THE LOOKING GLASS",
-          title: "TBD",
-          speakers: [],
+          title: "YOU MAY HAVE OPENAPI, BUT IS IT AI-READY?",
+          speakers: [
+            {
+              name: "FRANK KILCOMMINS",
+              job: "HEAD OF ENTERPRISE ARCHITECTURE",
+              company: "JENTIC",
+              avatar: asset("/images/speakers/Frank.jpg"),
+              linkedin: "https://www.linkedin.com/in/frank-kilcommins",
+            },
+          ],
         },
         {
           id: "12",
@@ -186,8 +219,10 @@
           speakers: [
             {
               name: "EMMANUEL PARASKAKIS",
-              company: "LEVEL 250",
+              job: "FOUNDER",
+              company: "LEVEL250",
               avatar: asset("/images/speakers/Emmanuel.jpg"),
+              linkedin: "https://www.linkedin.com/in/emmanuelparaskakis/",
             },
           ],
         },
@@ -201,7 +236,7 @@
     <HeaderHero />
     <DualHeaderSection
       title="Want to learn more?"
-      subtitle="Checkout Masterclasses by API Masters on December 11th"
+      subtitle="Check out Masterclasses by API Masters on December 10th"
       imageUrl={asset("/images/api_masters.png")}
       imageAlt="API Masters Logo"
       href="https://apimasters.fr/our-masterclasses/entry/353/"

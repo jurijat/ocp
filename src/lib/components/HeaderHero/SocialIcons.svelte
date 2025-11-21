@@ -2,6 +2,8 @@
   <!-- LinkedIn Icon -->
   <a
     href="https://www.linkedin.com/company/open-api-initiative/"
+    target="_blank"
+    rel="noopener noreferrer"
     class="w-11 h-11 flex items-center justify-center cursor-pointer group transition-transform duration-300 hover:scale-110"
     aria-label="LinkedIn"
   >
@@ -36,6 +38,8 @@
   <!-- YouTube Icon -->
   <a
     href="https://www.youtube.com/@OpenApi"
+    target="_blank"
+    rel="noopener noreferrer"
     class="w-11 h-11 flex items-center justify-center cursor-pointer group transition-transform duration-300 hover:scale-110"
     aria-label="YouTube"
   >

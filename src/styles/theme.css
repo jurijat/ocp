@@ -44,10 +44,7 @@
   /* ==================== */
 
   /* Font Families */
-  --font-family-sans:
-    "Onest", cursive, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  --font-family-sans: "Onest", "Droid Sans Mono", monospace;
 
   /* Font Sizes */
   --font-size-xs: 0.75rem; /* 12px */
