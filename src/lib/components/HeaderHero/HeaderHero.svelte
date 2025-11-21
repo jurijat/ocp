@@ -192,7 +192,7 @@
 
       <!-- Countdown Timer -->
       <div
-        class="flex text-[11px] text-text-muted font-medium tracking-widest uppercase px-4 pt-2 tablet:px-0 items-center justify-center tablet:justify-start w-full leading-5 tablet:text-md desktop-xxl:text-[16px]"
+        class="flex text-[11px] font-mono text-text-muted font-medium tracking-widest uppercase px-4 pt-2 tablet:px-0 items-center justify-center tablet:justify-start w-full leading-5 tablet:text-md desktop-xxl:text-[16px]"
       >
         {days} Days
         <img

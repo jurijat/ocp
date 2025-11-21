@@ -29,7 +29,11 @@
   --spacing-4xl: 6rem; /* 96px */
 
   /* Typography */
-  --font-family-base: "Onest", "Cousine", monospace;
+  --font-family-base: "Onest", "Helvetica", sans-serif;
+  --font-family-mono:
+    "Cousine", ui-monospace, "SF Mono", Monaco, "Cascadia Mono",
+    "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", monospace;
+
   --font-family-heading: var(--font-family-base);
 
   --font-size-xs: 0.75rem; /* 12px */
