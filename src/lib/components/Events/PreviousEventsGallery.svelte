@@ -48,7 +48,7 @@
 <section class="w-full bg-bg-dark px-2 tablet:px-0">
   <!-- Gallery Container with border -->
   <div
-    class="border border-primary-green-muted rounded-4xl tablet:rounded-none overflow-hidden relative"
+    class="border border-primary-green-muted tablet:border-0 rounded-4xl tablet:rounded-none overflow-hidden relative"
   >
     <!-- Mobile Slider -->
     <div class="tablet:hidden bg-black relative h-[400px]">
