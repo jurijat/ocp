@@ -55,7 +55,7 @@ export class CountdownTimer {
         class="flex text-[11px] text-text-muted font-medium font-mono tracking-widest uppercase px-4 pt-2 tablet:px-0 items-center justify-center tablet:justify-start w-full leading-5 tablet:text-md desktop-xxl:text-[16px]"
         data-countdown
       >
-        <div data-countdown-days>${this.days}</div> Days
+        <div data-countdown-days>${this.days}</div>&nbsp;Days
         <img
           src="${asset("/images/big_tilde.svg")}"
           alt=""
