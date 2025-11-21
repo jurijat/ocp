@@ -96,7 +96,7 @@ export class PreviousEventsGallery {
           style="background-image: url('${image.url}'); background-size: cover; background-position: center;"
         ></div>
       </div>
-    `
+    `,
       )
       .join("");
 
@@ -110,7 +110,7 @@ export class PreviousEventsGallery {
         style="background-color: ${index === 0 ? "#47c552" : "#333"};"
         aria-label="Go to slide ${index + 1}"
       ></button>
-    `
+    `,
       )
       .join("");
 
@@ -149,7 +149,7 @@ export class PreviousEventsGallery {
           class="w-1/4 aspect-4/3 overflow-hidden bg-center bg-no-repeat bg-cover"
           style="background-image: url('${image.url}')"
         ></div>
-      `
+      `,
           )
           .join("");
 

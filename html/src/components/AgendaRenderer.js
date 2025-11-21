@@ -229,7 +229,7 @@ export class AgendaRenderer {
                       .map((speaker) => this.renderSpeakerInfo(speaker))
                       .join("")
                   : item.badge
-                    ? `<div class="text-[13px] flex items-center text-text-muted desktop:text-[16px] uppercase desktop-xl:-ml-6 desktop-xl:-mb-6 desktop-xxl:-ml-12 desktop-xxl:-mb-12 desktop-xl:h-20 tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out">
+                    ? `<div class="text-xs flex items-center text-text-muted desktop:text-[13px] desktop-xxl:text-[16px] font-normal uppercase desktop-xl:-ml-6 desktop-xl:-mb-6 desktop-xxl:-ml-12 desktop-xxl:-mb-12 desktop-xl:h-20 tracking-widest group-hover:text-text-on-green transition-colors duration-200 ease-in-out">
                       ${item.badge}
                     </div>`
                     : ""
@@ -311,7 +311,7 @@ export class AgendaRenderer {
         );
 
         itemsHtml += `
-          <div class="w-full h-auto tablet:h-[252px] desktop:h-[490px]">
+          <div class="w-full">
             ${this.renderAgendaItem(section.items[3], true)}
           </div>
         `;
@@ -339,7 +339,7 @@ export class AgendaRenderer {
           } else {
             // Single item (odd number)
             return `
-            <div class="w-full h-auto tablet:h-[252px] desktop:h-[490px]">
+            <div class="w-full">
               ${this.renderAgendaItem(pair[0], true)}
             </div>
           `;

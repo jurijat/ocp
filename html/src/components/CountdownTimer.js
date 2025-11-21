@@ -27,7 +27,7 @@ export class CountdownTimer {
     if (diff > 0) {
       this.days = Math.floor(diff / (1000 * 60 * 60 * 24));
       this.hours = Math.floor(
-        (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
       );
       this.minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
       this.seconds = Math.floor((diff % (1000 * 60)) / 1000);

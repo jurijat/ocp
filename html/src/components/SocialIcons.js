@@ -7,8 +7,8 @@
 
 export class SocialIcons {
   constructor() {
-    this.linkedInUrl = 'https://www.linkedin.com/company/open-api-initiative/';
-    this.youtubeUrl = 'https://www.youtube.com/@OpenApi';
+    this.linkedInUrl = "https://www.linkedin.com/company/open-api-initiative/";
+    this.youtubeUrl = "https://www.youtube.com/@OpenApi";
   }
 
   /**

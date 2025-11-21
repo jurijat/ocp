@@ -254,7 +254,7 @@ END:VCALENDAR`;
     const backdrop = this.container.querySelector("[data-backdrop]");
     const closeBtn = this.container.querySelector("[data-close-btn]");
     const downloadButtons = this.container.querySelectorAll(
-      "[data-download-ics], [data-download-ics-alt]"
+      "[data-download-ics], [data-download-ics-alt]",
     );
 
     backdrop.addEventListener("click", (e) => this.handleBackdropClick(e));
