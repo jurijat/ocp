@@ -116,7 +116,7 @@
         }}
         class="flex text-xs tablet:text-[11px] desktop-xl:text-[13px] items-center gap-x-2 transition-colors duration-transition-fast uppercase text-text-muted hover:text-primary hover:cursor-pointer tracking-widest leading-tightest"
       >
-        <span class="text-4xl -mt-1">+</span>
+        <span class="text-4xl tablet:mt-px">+</span>
         <span>Add to <br class="block tablet:hidden" /> calendar</span>
       </a>
     </div>
