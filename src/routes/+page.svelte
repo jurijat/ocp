@@ -129,7 +129,7 @@
           title: "OPENAPI AND SPRING-BOOT 4 - WHAT'S NEW?",
           speakers: [
             {
-              name: "BADR NASSLAHSEN",
+              name: "BADR NASS LAHSEN",
               job: "LEAD CLOUD AND SECURITY ARCHITECT",
               company: "CYBERARK",
               avatar: asset("/images/speakers/Badr.jpg"),
