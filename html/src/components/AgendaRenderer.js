@@ -108,7 +108,7 @@ export class AgendaRenderer {
                 <div class="speaker-overlay absolute inset-0 bg-black/48 opacity-0 transition-all duration-300 ease-out"></div>
                 <!-- LinkedIn Icon -->
                 <div class="linkedin-icon-overlay absolute inset-0 flex items-center justify-center transition-all duration-300">
-                  <img src="/images/linkedin_overlay.svg" alt="LinkedIn" class="w-6 h-6 tablet:w-7 tablet:h-7 desktop:w-4 desktop:h-4 desktop-xl:w-6 desktop-xl:h-6" />
+                  <img src="./images/linkedin_overlay.svg" alt="LinkedIn" class="w-6 h-6 tablet:w-7 tablet:h-7 desktop:w-4 desktop:h-4 desktop-xl:w-6 desktop-xl:h-6" />
                 </div>
               </div>
             </a>
