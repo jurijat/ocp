@@ -35,7 +35,7 @@
 </script>
 
 <header
-  class="flex flex-col tablet:flex-row h-[667px] tablet:min-h-0 tablet:h-[clamp(640px,50vw+160px,900px)] text-text-primary overflow-hidden desktop:h-[clamp(900px,50vw+160px,1117px)] desktop-xl:h-[min(100vh,1117px)]"
+  class="flex flex-col tablet:flex-row h-[667px] tablet:min-h-0 tablet:h-[clamp(640px,50vw+160px,900px)] text-text-primary overflow-hidden desktop:h-[max(800px,50vw+160px)] desktop-xl:h-[min(100vh,1117px)]"
 >
   <!-- Left Content Container (2/3) -->
   <div
@@ -43,7 +43,7 @@
   >
     <!-- Logos Section -->
     <div
-      class="flex flex-row w-full items-center h-10.5 px-4 mb-[22px] desktop:mb-[91.5px] desktop-xxl:mb-[43px] desktop:h-16 tablet:px-0 justify-between"
+      class="flex flex-row w-full items-center h-10.5 px-4 tablet:mb-[22px] desktop:mb-[clamp(43px,1vh,91.5px)] desktop-xxl:mb-[43px] desktop:h-16 tablet:px-0 justify-between"
     >
       <div
         class="w-40 tablet:w-44 tablet:pl-4 desktop:pl-0 h-10.5 desktop:h-16 desktop:w-[243px] desktop-xxl:h-18 desktop-xxl:w-[273px] flex items-center justify-center text-text-muted text-sm"
@@ -72,9 +72,11 @@
     </div>
 
     <!-- Title Section -->
-    <div class="flex flex-col px-4 pb-4 desktop:pb-0 tablet:px-0">
+    <div
+      class="flex flex-col h-[clamp(180px,50vw+16px,231px)] mobile:h-[231px] justify-center tablet:h-auto px-4 tablet:mb-0 desktop:pb-0 tablet:px-0"
+    >
       <div
-        class="text-[clamp(32px,10vw+12px,55px)] mobile:text-[55px] h-[159px] tablet:h-auto tablet:text-[clamp(80px,5vw+32px,160px)] desktop:text-[clamp(6rem,5vw+32px,8rem)] font-bold leading-[1.05] tablet:leading-none tracking-tighter desktop-xl:text-[clamp(8rem,5vw+24px,11rem)] desktop-xl:leading-[clamp(8rem,5vw+24px,11rem)] desktop-xxl:leading-[10rem] desktop-xxl:text-[180px] wrap-break-word"
+        class="flex flex-col justify-center text-[clamp(32px,10vw+12px,55px)] mobile:text-[55px] h-[159px] tablet:h-auto tablet:text-[clamp(80px,5vw+32px,160px)] desktop:text-[clamp(6rem,5vw+32px,8rem)] font-bold leading-[1.05] tablet:leading-none tracking-tighter desktop-xl:text-[clamp(8rem,5vw+24px,11rem)] desktop-xl:leading-[clamp(8rem,5vw+24px,11rem)] desktop-xxl:leading-[10rem] desktop-xxl:text-[180px] wrap-break-word"
       >
         <span class="text-primary block">OPENAPI</span>
         <span class="text-text-primary block">CONFERENCE</span>
@@ -84,13 +86,11 @@
 
     <!-- Decorative Line (tablet/desktop) -->
     <div
-      class="hidden tablet:block z-10 w-full h-px tablet:mt-4 tablet:mb-6 desktop:mt-10 desktop:mb-12 pb-px bg-primary-green-muted"
+      class="hidden tablet:block z-10 w-full h-px tablet:mt-4 tablet:mb-6 desktop:mt-[clamp(1.5rem, 2vw, 2.5rem)] desktop:mb-[clamp(1.5rem, 2vw, 2.5rem)] pb-px bg-primary-green-muted"
     ></div>
 
     <!-- Decorative Line (mobile) -->
-    <div
-      class="tablet:hidden w-full h-px bg-primary-green-muted mt-6 pb-px"
-    ></div>
+    <div class="tablet:hidden w-full h-px bg-primary-green-muted pb-px"></div>
 
     <!-- Subtitle with Date and Calendar -->
     <div

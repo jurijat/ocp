@@ -15,7 +15,7 @@
 >
   <!-- Avatar -->
   <div
-    class="w-13 tablet:w-10 h-13 tablet:h-10 desktop-xl:h-20 desktop-xl:w-20 rounded-full overflow-hidden shrink-0"
+    class="w-13 tablet:w-12 h-13 tablet:h-12 desktop-xl:h-20 desktop-xl:w-20 rounded-full overflow-hidden shrink-0"
   >
     {#if speaker.avatar}
       <img

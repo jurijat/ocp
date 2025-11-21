@@ -11,7 +11,7 @@
     {
       id: "foundations",
       title: "FOUNDATIONS",
-      timeRange: "09:15 — 10:40",
+      timeRange: "08:30 — 10:40",
       items: [
         {
           id: "breakfast",
