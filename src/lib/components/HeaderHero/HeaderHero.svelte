@@ -35,7 +35,7 @@
 </script>
 
 <header
-  class="flex flex-col tablet:flex-row h-[667px] tablet:min-h-0 tablet:h-[clamp(640px,50vw+160px,900px)] text-text-primary overflow-hidden desktop:h-[clamp(900px,50vw+160px,1117px)] desktop-xl:h-[clamp(1118px,50vw+160px,1280px)]"
+  class="flex flex-col tablet:flex-row h-[667px] tablet:min-h-0 tablet:h-[clamp(640px,50vw+160px,900px)] text-text-primary overflow-hidden desktop:h-[clamp(900px,50vw+160px,1117px)] desktop-xl:h-[min(100vh,1117px)]"
 >
   <!-- Left Content Container (2/3) -->
   <div
