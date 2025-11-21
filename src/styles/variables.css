@@ -29,7 +29,7 @@
   --spacing-4xl: 6rem; /* 96px */
 
   /* Typography */
-  --font-family-sans: "Onest", "Droid Sans Mono", monospace;
+  --font-family-base: "Onest", "Cousine", monospace;
   --font-family-heading: var(--font-family-base);
 
   --font-size-xs: 0.75rem; /* 12px */

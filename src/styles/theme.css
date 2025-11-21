@@ -44,7 +44,7 @@
   /* ==================== */
 
   /* Font Families */
-  --font-family-sans: "Onest", "Droid Sans Mono", monospace;
+  --font-family-base: "Onest", "Cousine", monospace;
 
   /* Font Sizes */
   --font-size-xs: 0.75rem; /* 12px */

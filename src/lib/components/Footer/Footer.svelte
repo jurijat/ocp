@@ -3,12 +3,12 @@
 </script>
 
 <footer
-  class="p-4 tablet:p-8 desktop-xxl:p-16 flex flex-col tablet:flex-row gap-6 tablet:gap-0 min-h-[210px] items-center bg-black"
+  class="p-4 pt-12 tablet:p-8 desktop:p-16 desktop-xxl:p-24 flex flex-col tablet:flex-row gap-6 tablet:gap-0 min-h-[210px] items-center bg-black"
 >
   <!-- Mobile Layout -->
   <div class="tablet:hidden flex flex-col items-center gap-6 w-full">
     <!-- 1. Text -->
-    <p
+    <div
       class="text-[18px] tracking-normal text-center text-text-primary opacity-[0.64]"
     >
       For any questions about the OAI Track, please contact
@@ -18,7 +18,7 @@
       >
         oai-track@openapis.org
       </a>
-    </p>
+    </div>
 
     <!-- 2. Icons -->
     <SocialIcons />
@@ -56,10 +56,12 @@
 
   <!-- Tablet/Desktop Layout -->
   <!-- Left Content Container (2/3) -->
-  <div class="hidden tablet:flex w-full tablet:w-2/3 flex-col gap-y-6">
+  <div
+    class="hidden tablet:flex w-full tablet:w-2/3 flex-col gap-y-6 desktop:gap-y-0"
+  >
     <!-- Contact Information -->
     <div class="flex flex-col gap-y-4 text-left">
-      <p class="text-base text-text-secondary tracking-wide">
+      <div class="text-base text-text-secondary tracking-wide">
         For any questions about the OAI Track, please contact
         <a
           href="mailto:oai-track@openapis.org"
@@ -67,7 +69,7 @@
         >
           oai-track@openapis.org
         </a>
-      </p>
+      </div>
 
       <!-- Links Section -->
       <div
