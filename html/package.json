@@ -15,7 +15,7 @@
     "build:js": "node esbuild.config.js",
     "build:css": "npx tailwindcss -i ./src/styles/input.css -o ./dist/output.css --minify",
     "build:html": "cp src/index.html dist/index.html",
-    "build:assets": "cp -r ../static/* dist/",
+    "build:assets": "cp -r ../static/* dist/ && touch dist/.nojekyll",
     "preview": "serve dist -p 4173",
     "clean": "rm -rf dist && mkdir -p dist"
   },
