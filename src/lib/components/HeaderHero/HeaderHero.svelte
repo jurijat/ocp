@@ -86,11 +86,11 @@
 
     <!-- Decorative Line (tablet/desktop) -->
     <div
-      class="hidden tablet:block z-10 w-full h-px tablet:mt-4 tablet:mb-6 desktop:mt-[clamp(1.5rem, 2vw, 2.5rem)] desktop:mb-[clamp(1.5rem, 2vw, 2.5rem)] pb-px bg-primary-green-muted"
+      class="hidden tablet:block z-10 w-full h-px tablet:mt-4 tablet:mb-6 desktop:mt-[clamp(1.5rem, 2vw, 2.5rem)] desktop:mb-[clamp(1.5rem, 2vw, 2.5rem)] pb-px bg-border-primary"
     ></div>
 
     <!-- Decorative Line (mobile) -->
-    <div class="tablet:hidden w-full h-px bg-primary-green-muted pb-px"></div>
+    <div class="tablet:hidden w-full h-px bg-border-primary pb-px"></div>
 
     <!-- Subtitle with Date and Calendar -->
     <div
