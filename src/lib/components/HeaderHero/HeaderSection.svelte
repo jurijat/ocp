@@ -28,12 +28,12 @@
   </div>
   <div class="flex w-2/10 tablet:w-1/10 items-center justify-end">
     <div
-      class="w-10 h-10 tablet:w-16 tablet:h-16 desktop-xl:w-24 desktop-xl:h-24 bg-black rounded-full flex items-center justify-center border border-primary-green-muted hover:border-primary-dark transition-colors duration-200"
+      class="w-10 h-10 tablet:w-16 tablet:h-16 desktop-xl:w-24 desktop-xl:h-24 bg-black rounded-full flex items-center justify-center border border-border-primary transition-colors duration-200"
     >
       {#if iconType === "arrow-down"}
         <!-- Arrow Down Icon -->
         <svg
-          class="w-5 h-5 tablet:w-5 tablet:h-5 desktop-xl:w-7 desktop-xl:h-7 text-primary-green-muted"
+          class="tablet:w-5 tablet:h-5 w-4 h-4 desktop-xxl:w-6 desktop-xxl:h-6 text-border-primary"
           viewBox="0 0 24 24"
           fill="currentColor"
         >
@@ -42,7 +42,7 @@
       {:else if iconType === "plus"}
         <!-- Plus Icon -->
         <svg
-          class="w-5 h-5 tablet:w-5 tablet:h-5 desktop-xxl:w-7 desktop-xxl:h-7 text-primary-green-muted"
+          class="w-5 h-5 tablet:w-5 tablet:h-5 desktop-xxl:w-6 desktop-xxl:h-6 text-border-primary"
           viewBox="0 0 24 24"
           fill="currentColor"
         >
