@@ -254,7 +254,7 @@
       title="Subscribe"
       subtitle="For OpenAPI Initiative Updates"
       iconType="plus"
-      href="https://www.openapis.org/#fws_691fe5018bbda"
+      href="https://www.openapis.org/#footer-outer"
     />
     <Footer />
   </div>
